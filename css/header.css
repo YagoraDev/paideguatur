@@ -1,3 +1,4 @@
+/* RESET */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -47,12 +48,11 @@ header {
     position: static;
 }
 
-/* Esconder o checkbox */
+/* ESCONDER O CHECKBOX*/
 #menu {
     display: none;
 }
 
-/* Estilo do ícone do menu */
 .menu-icon {
     cursor: pointer;
     display: flex;
@@ -60,16 +60,16 @@ header {
 }
 
 .menu-icon img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
-/* Menu fechado por padrão */
+/* MENU FECHADO POR PADRÃO*/
 nav {
     display: none;
 }
 
-/* Quando o checkbox está marcado, o menu aparece */
+/* QUANDO O CHECKBOX ESTÁ MARCADO, O MENU APARECE */
 #menu:checked ~ nav {
     display: block;
     position: absolute;
@@ -100,14 +100,15 @@ nav {
     padding: 10px 0;
 }
 
-/* Botão do WhatsApp */
-.whatsapp-button {
+/* BOTAO WHATSAPP */
+.whatsapp-container {
+    box-sizing: border-box;
     padding: 20px;
     margin-top: 10px;
 }
 
-.whatsapp-button a {
-    display: inline-block;
+.whatsapp-button {
+    display: flex;
     background-color: #25D366;
     color: white;
     text-decoration: none;
@@ -115,11 +116,19 @@ nav {
     border-radius: 24px;
     font-weight: bold;
     font-size: 18px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-.whatsapp-button a:hover {
+.whatsapp-button img {
+    display: block;
+    margin-right: 5px;
+}
+
+.whatsapp-button:hover {
     background-color: #128C7E;
 }
+
+
 
