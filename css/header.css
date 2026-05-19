@@ -18,7 +18,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,7 @@ header {
     height: 60px;
 }
 
+/* AREA MENU */
 .navigation-menu {
     display: flex;
     align-items: center;
@@ -100,7 +101,7 @@ nav {
     padding: 10px 0;
 }
 
-/* BOTAO WHATSAPP */
+/* AREA WHATSAPP */
 .whatsapp-container {
     box-sizing: border-box;
     padding: 20px;
@@ -130,5 +131,57 @@ nav {
     background-color: #128C7E;
 }
 
+.whatsapp-desktop .whatsapp-button {
+    display: none;
+}
 
-
+/* MEDIA QUERRY */
+@media screen and (min-width: 1128px) {
+    .navigation-menu {
+        margin-top: 0;
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .navigation-menu label {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+    
+    .navigation-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .whatsapp-container {
+        padding: 0;
+        margin: auto 0;
+        width: 300px;
+        flex-shrink: 0;
+    }
+    
+    .list-links li a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    
+    .list-links {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .list-links li {
+        margin: 0;
+    }
+}
