@@ -1,39 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>PaideguaViagens</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <a href="index.html" class="logo-container">
-                <img src="img/logo.png" alt="Imagem da logo">
-                <h3>PAIDEGUATUR</h3>
-            </a>
+      <div class="header-container">
+        <a href="index.html" class="logo-container">
+          <img src="img/logo.png" alt="Imagem da logo" />
+          <h3>PAIDEGUATUR</h3>
+        </a>
 
-            <div class="navigation-menu">
-                <input type="checkbox" id="menu">
-                <label for="menu" class="menu-icon">
-                    <img src="img/menu.png" alt="Icone do menu">
-                </label>
+        <div class="navigation-menu">
+          <input type="checkbox" id="menu" />
+          <label for="menu" class="menu-icon">
+            <img src="img/menu.png" alt="Icone do menu" />
+          </label>
 
-                <nav>
-                    <ul class="list-links">
-                        <li><a href="#">Destinos</a></li>
-                        <li><a href="#">Por que nós</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Depoimentos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                    <div class="whatsapp-button">
-                        <a href="#">Falar no WhatsApp</a>
-                    </div>
-                </nav>
+          <nav>
+            <ul class="list-links">
+              <li><a href="#">Destinos</a></li>
+              <li><a href="#">Por que nós</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+            <!-- WHATSAPP MOBILE - DENTRO DA NAV -->
+            <div class="whatsapp-container">
+              <a class="whatsapp-button" href="#"
+                ><img
+                  src="img/whatsapp-logo.png"
+                  alt="Imagem da logo whatsApp"
+                />Falar no WhatsApp</a
+              >
             </div>
+          </nav>
+          
+          <!-- WHATSAPP DESKTOP - FORA DA NAV -->
+          <div class="whatsapp-desktop">
+            <a class="whatsapp-button" href="#"
+              ><img
+                src="img/whatsapp-logo.png"
+                alt="Imagem da logo whatsApp"
+              />Falar no WhatsApp</a
+            >
+          </div>
         </div>
+      </div>
     </header>
-</body>
+  </body>
 </html>
