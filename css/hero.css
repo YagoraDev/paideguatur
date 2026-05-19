@@ -1,0 +1,96 @@
+.hero {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/background-marajo-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+/* AREA LOCALIZACAO */
+.hero-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 100px 0 30px;
+    background-color: rgb(115, 115, 115, 0.5);
+}
+
+.hero-location p {
+    color: white;
+    font-weight: bold;
+}
+
+.hero-location img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/* AREA TEXTO */
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    font-weight: 800; /* ou 600, 800 - mais confiável que "bold" */
+    font-size: 3rem; /* 28px aproximadamente, mas mais responsivo */
+    line-height: 1.1;
+    font-family: "Archivo-Black";
+
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+
+.hero-emphasis {
+    color: #fdca3a;
+}
+
+/* AREA BOTOES */
+.hero-buttons {
+    margin: 30px 0;
+}
+
+.destiny-button {
+    display: flex;
+    background-color: rgb(115, 115, 115, 0.5);
+    color: white;
+    text-decoration: none;
+    padding: 18px 24px;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hero-buttons a.whatsapp-button {
+    display: flex;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
