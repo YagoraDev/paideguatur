@@ -173,12 +173,17 @@
 @media screen and (min-width: 1024px) {
     .hero {
         background-image: url(../img/background-marajo-desktop.png);
+        height: 800px;
     }
 
     .hero-container {
-        max-width: 1000px;
+        max-width: 1200px;
         padding: 0 20px;  
         margin: 0 auto;   
+    }
+
+    .hero-location {
+    margin-top: 150px;
 }
     
 }
