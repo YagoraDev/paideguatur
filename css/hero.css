@@ -44,8 +44,8 @@
 }
 
 .hero-text h1 {
-    font-weight: 800; /* ou 600, 800 - mais confiável que "bold" */
-    font-size: 3rem; /* 28px aproximadamente, mas mais responsivo */
+    font-weight: 800; 
+    font-size: 3rem; 
     line-height: 1.1;
     font-family: "Archivo-Black";
 

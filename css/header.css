@@ -28,7 +28,9 @@ header {
 
 .logo-container h3 {
     color: black;
-    font-size: 18px;
+    font-size: 14px;
+    font-family: "Archivo-Black";
+
 }
 
 .logo-container img {
@@ -146,7 +148,11 @@ nav {
     }
 }
 
-@media screen and (min-width: 1128px) {
+@media screen and (min-width: 1024px) {
+    header {
+        height: 64px;
+    }
+    
     .header-container {
         display: flex;
         flex-direction: row;
@@ -154,7 +160,7 @@ nav {
         padding: 10px 20px;
         justify-content: space-between;
         align-items: center;
-}
+    }
 
     .navigation-menu {
         margin-top: 0;
@@ -190,7 +196,7 @@ nav {
     }
 
     .whatsapp-container a.whatsapp-button {
-        height: 40px;
+        height: 35px;
         font-size: 14px;
     }
 
