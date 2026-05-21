@@ -169,3 +169,16 @@
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        background-image: url(../img/background-marajo-desktop.png);
+    }
+
+    .hero-container {
+        max-width: 1000px;
+        padding: 0 20px;  
+        margin: 0 auto;   
+}
+    
+}
