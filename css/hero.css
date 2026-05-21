@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    height: 800px;
+    height: 890px;
     background-image: url(../img/background-marajo-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,8 +22,8 @@
     height: 40px;
     padding: 20px;
     border-radius: 20px;
-    margin: 100px 0 30px;
-    background-color: rgb(115, 115, 115, 0.5);
+    margin: 80px 0 30px;
+    background: rgba(104, 180, 150, 0.25);
 }
 
 .hero-location p {
@@ -52,7 +52,7 @@
 }
 
 .hero-text p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     margin-top: 30px;
 }
@@ -63,7 +63,7 @@
 
 /* AREA BOTOES */
 .hero-buttons {
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .destiny-button {
@@ -79,6 +79,7 @@
     align-items: center;
     width: 100%;
     margin-top: 15px;
+    border: 1px solid rgb(189, 189, 189);
 }
 
 .hero-buttons a.whatsapp-button {
@@ -93,4 +94,33 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+/* AREA CARDS */
+.hero-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.hero-cards .card {
+    box-sizing: border-box;
+    background: rgba(104, 180, 150, 0.25);
+    color: white;
+    width: 120px;
+    height: 72px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.hero-cards .card h2 {
+    font-family: "Archivo-Black";
+    margin-top: 10px;
+}
+
+.hero-cards .card p {
+    margin-top: 5px;
+    font-size: 12px;
+
 }
