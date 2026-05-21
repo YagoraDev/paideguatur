@@ -176,6 +176,10 @@
         height: 800px;
     }
 
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
     .hero-container {
         max-width: 1200px;
         padding: 0 20px;  
@@ -183,7 +187,16 @@
     }
 
     .hero-location {
-    margin-top: 150px;
-}
+        margin-top: 120px;
+    }
+
+    .hero-buttons a.whatsapp-button:hover {
+        background-color: #128C7E;
+    }
+
+    .destiny-button:hover {
+    background-color: rgb(115, 115, 115, 0.9);
+    }  
+
     
 }
