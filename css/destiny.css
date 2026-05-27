@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 80px 20px;
 }
 
@@ -79,4 +79,30 @@
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
+}
+
+/* MEDIA QUERRY */
+@media screen and (min-width: 768px) {
+    .destiny-cards .card {
+        max-width: 370px;
+    }
+
+    .destiny-cards .card img {
+        height: 450px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .destiny-cards .card {
+        max-width: 300px;
+    }
+
+    .destiny-cards .card img {
+        height: 370px;
+    }
+
+    .destiny-title h2 {
+        font-size: 2.2rem;
+    }
 }
