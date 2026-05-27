@@ -11,7 +11,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 1200px;  
+    max-width: 1300px;  
     padding: 10px 20px;  
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,6 @@ header {
     color: black;
     font-size: 14px;
     font-family: "Archivo-Black";
-
 }
 
 .logo-container img {
@@ -152,10 +151,14 @@ nav {
     .header-container {
         display: flex;
         flex-direction: row;
-        max-width: 1200px;
+        max-width: 1300px;
         padding: 10px 20px;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .logo-container h3 {
+        font-size: 16px;
     }
 
     .navigation-menu {
