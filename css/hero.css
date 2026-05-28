@@ -47,7 +47,7 @@
     font-weight: 800; 
     font-size: 3rem; 
     line-height: 1.1;
-    font-family: "Archivo-Black";
+    font-family: "Montserrat-ExtraBold";
 
 }
 
@@ -121,9 +121,7 @@
 }
 
 .hero-cards .card p {
-    margin-top: 5px;
     font-size: 12px;
-
 }
 
 /* MEDIA QUERRYS */
