@@ -1,0 +1,93 @@
+.testimonial {
+    width: 100%;
+    background-color: rgb(248, 234, 206);
+    height: 1000px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 20px;
+}
+
+.testimonial-container .title {
+    text-align: center;
+}
+
+.testimonial-container .title h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: rgb(0, 185, 216);
+}
+
+.testimonial-container .title h2 {
+    font-size: 1.7rem;
+    font-family: "Montserrat-ExtraBold";
+    color: rgb(0, 58, 98);
+    margin: 20px 0 40px;
+}
+
+.testimonial-cards .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial-cards .card p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.testimonial-cards .card .stars {
+    margin-bottom: 20px;
+}
+
+.testimonial-cards .usuario {
+    display: flex;
+    margin-top: 20px;
+}
+
+.testimonial-cards .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fdca3a;
+    color: oklch(34% .09 245);
+    border-radius: 100%;
+    font-family: "Montserrat-ExtraBold";
+}
+
+.testimonial-cards .avatar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.testimonial-cards .avatar-info h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: oklch(34% .09 245);
+}
+
+.testimonial-cards .avatar-info p {
+    color: rgb(72, 86, 101);
+    font-size: 12px;
+}
+
+/* MEDIA QUERRY */
+@media screen and (min-width: 768px) {
+
+    .testimonial-cards {
+        display: flex;
+        gap: 20px;
+    }
+
+}
