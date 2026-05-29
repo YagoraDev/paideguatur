@@ -29,7 +29,7 @@ header {
 .logo-container h3 {
     color: black;
     font-size: 14px;
-    font-family: "Archivo-Black";
+    font-family: "Montserrat-ExtraBold";
 }
 
 .logo-container img {
@@ -105,7 +105,7 @@ nav {
 
 .whatsapp-button {
     display: flex;
-    background-color: #25D366;
+    background-color: oklch(68% .18 145);
     color: white;
     text-decoration: none;
     padding: 12px 24px;

@@ -1,0 +1,195 @@
+.about {
+    width: 100%;
+    background-color: rgb(255, 247, 247);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    padding: 80px auto;
+}
+
+#paidegua-tablet, #paidegua-desktop {
+    display: none;
+}
+
+.about-logo-paidegua {
+    width: 100%;
+    padding: 80px 20px 0;
+}
+
+.about-logo-paidegua img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-info {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.about-info h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: rgb(0, 185, 216);
+}
+
+.about-info h2 {
+    font-size: 1.7rem;
+    font-family: "Montserrat-ExtraBold";
+    color: rgb(0, 58, 98);
+    line-height: 35px;
+    margin: 10px 0 20px 0;
+}
+
+.about-info p {
+    color: rgb(72, 86, 101);
+    line-height: 22px;
+}
+
+.about-checked {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;          
+    width: 100%;              
+    align-items: flex-start;  
+}
+
+.checked-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;      
+}
+
+.about-checked .checked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: oklch(58% .13 150);
+    border-radius: 100%;
+    flex-shrink: 0;           
+}
+
+.about-checked .checked img {
+    width: 12px;              
+    height: 12px;
+    display: block;           
+}
+
+.checked-item p {
+    margin: 0;                
+    line-height: 1.2;         
+}
+
+.about-container a.whatsapp-button {
+    display: flex;
+    background-color: oklch(68% .18 145);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 14px;
+    height: 45px;
+    align-items: center;
+    width: 250px;
+    align-self: flex-start; 
+    margin: 20px 0 80px 20px;    
+    
+}
+
+.about-container a.whatsapp-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* MEDIA QUERRY */
+@media screen and (min-width: 768px) {
+    #paidegua-mobile, #paidegua-desktop {
+        display: none;
+    }
+
+    #paidegua-tablet {
+        display: block;
+    }
+
+    .about-logo-paidegua {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .about-info h3 {
+        font-size: 15px;
+    }
+
+    .about-info h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #paidegua-tablet, #paidegua-mobile {
+        display: none;
+    }
+
+    #paidegua-desktop {
+        display: block;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        padding: 80px 0;
+        margin: 0 auto;
+        gap: 60px;
+    }
+
+    .about-logo-paidegua {
+        width: 40%;            
+        flex-shrink: 0;        
+        padding: 0;
+        padding: 0 0 0 20px;
+    }
+
+    .about-logo-paidegua img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .about-details {
+        width: 60%;            
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px 0 0;
+    }
+
+    .about-info {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .about-checked {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .about-container a.whatsapp-button {
+        margin: 20px 0 0 0;    
+        align-self: flex-start;
+    }
+
+    .about-container a.whatsapp-button:hover {
+        background-color: #128C7E;
+    }
+}

@@ -1,0 +1,89 @@
+.why-us {
+    background-color: rgb(248, 234, 206);
+    width: 100%;
+    padding: 40px 0 90px 0;
+}
+
+.why-us-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.why-us-container .title {
+    text-align: center;
+}
+
+.why-us-container .title h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: rgb(0, 185, 216);
+    margin: 60px 0 10px 0;
+}
+
+.why-us-container .title h2 {
+    font-size: 1.7rem;
+    margin-top: 20px;
+    font-family: "Montserrat-ExtraBold";
+    color: rgb(0, 58, 98);
+    line-height: 35px;
+}
+    
+.why-us-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.why-us-cards .card {
+    background-color: white;
+    width: 382px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.why-us-cards .card h3 {
+    font-family: "Poppins";
+    margin: 15px 0;
+    color: rgb(0, 58, 98);
+    font-size: 18px;
+}
+
+.why-us-cards .card p {
+    color: rgb(72, 86, 101);
+}
+
+.why-us-cards .card .icone-blue {
+    display: flex;
+    background-color: oklch(43.916% 0.10875 246.08);
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MEDIA QUERRY */
+@media screen and (min-width: 768px) {
+    .why-us-container .title h3 {
+        font-size: 15px;
+    }
+
+    .why-us-container .title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .why-us-cards .card {
+        width: 300px;
+        height: 212px;
+    }
+}

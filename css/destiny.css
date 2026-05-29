@@ -9,7 +9,7 @@
     flex-direction: column;
     margin: 0 auto;
     max-width: 1300px;
-    padding: 80px 20px;
+    padding: 90px 20px;
 }
 
 .destiny-title h3{
@@ -22,7 +22,7 @@
 .destiny-title h2 {
     font-size: 1.7rem;
     margin-top: 20px;
-    font-family: "Archivo-Black";
+    font-family: "Montserrat-ExtraBold";
     color: rgb(0, 58, 98);
     margin-bottom: 15px;
 }
@@ -34,10 +34,9 @@
 
 .destiny-cards {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -72,6 +71,7 @@
 .info-card p {
     margin-top: 10px;
     margin-bottom: 20px;
+    color: rgb(72, 86, 101);
 }
 
 .info-card a {
@@ -83,6 +83,15 @@
 
 /* MEDIA QUERRY */
 @media screen and (min-width: 768px) {
+    .destiny-title h2 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .destiny-title h3{
+        font-size: 15px;
+    }
+
     .destiny-cards .card {
         max-width: 370px;
     }
