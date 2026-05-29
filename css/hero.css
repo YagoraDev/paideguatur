@@ -84,7 +84,7 @@
 
 .hero-buttons a.whatsapp-button {
     display: flex;
-    background-color: #25D366;
+    background-color: oklch(68% .18 145);
     color: white;
     text-decoration: none;
     padding: 12px 24px;
