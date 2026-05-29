@@ -7,9 +7,11 @@
 .testimonial-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 1300px;
     padding: 80px 20px;
+    margin: 0 auto;
 }
 
 .testimonial-container .title {
