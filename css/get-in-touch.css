@@ -1,0 +1,63 @@
+.get-in-touch {
+    width: 100%;
+    background: linear-gradient(to right, rgb(25, 130, 190), rgb(9, 92, 148));
+}
+
+.container-get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.container-get-in-touch h2 {
+    font-size: 1.7rem;
+    font-family: "Montserrat-ExtraBold";
+    color: rgb(255, 255, 255);
+}
+
+.container-get-in-touch p {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    opacity: 70%;
+    margin-top: 20px;
+}
+
+.container-get-in-touch a.whatsapp-button {
+    display: flex;
+    background-color: oklch(68% .18 145);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 32px;
+    font-size: 16px;
+    height: 60px;
+    align-items: center;
+    width: 280px;
+    margin: 30px 0 0;
+}
+
+/* MEDIA QUERRY */
+@media screen and (min-width: 768px) {
+    .container-get-in-touch h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-get-in-touch h2 {
+        font-size: 3rem;
+    }
+    .container-get-in-touch p {
+        font-size: 18px;
+    }
+    .container-get-in-touch a.whatsapp-button:hover {
+        background-color: #128C7E;
+    }
+
+}

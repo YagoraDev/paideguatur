@@ -1,7 +1,6 @@
 .testimonial {
     width: 100%;
     background-color: rgb(248, 234, 206);
-    height: 1000px;
 }
 
 .testimonial-container {
@@ -91,5 +90,10 @@
         display: flex;
         gap: 20px;
     }
+}
 
+@media screen and (min-width: 1024px) {
+    .testimonial-container .title h2 {
+    font-size: 2rem;
+    }
 }
