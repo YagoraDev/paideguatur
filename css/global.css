@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Archivo-Black";
-    src: url(../fonts/ArchivoBlack-Regular.ttf);
+    font-family: "Montserrat-ExtraBold";
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
     font-style: normal;
     font-display: swap;
 }
@@ -21,4 +21,16 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#destinos,
+#porque-nos,
+#sobre,
+#depoimentos,
+#contato {
+    scroll-margin-top: 90px;
 }
