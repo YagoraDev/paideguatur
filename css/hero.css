@@ -80,6 +80,9 @@
     width: 100%;
     margin-top: 15px;
     border: 1px solid rgb(189, 189, 189);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background-color 0.25s ease;
 }
 
 .hero-buttons a.whatsapp-button {
@@ -189,11 +192,11 @@
     }
 
     .hero-buttons a.whatsapp-button:hover {
-        background-color: #128C7E;
+        transform: translateY(-3px);
     }
 
     .destiny-button:hover {
-    background-color: rgb(115, 115, 115, 0.9);
+        transform: translateY(-3px);
     }  
 
     

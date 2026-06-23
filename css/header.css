@@ -4,7 +4,10 @@ header {
     height: 84px;
     justify-content: center;
     background-color: #fdca3a;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header-container {
@@ -32,14 +35,12 @@ header {
     font-family: "Montserrat-ExtraBold";
 }
 
-/* AREA MENU */
 .navigation-menu {
     display: flex;
     align-items: center;
     position: static;
 }
 
-/* ESCONDER O CHECKBOX*/
 #menu {
     display: none;
 }
@@ -55,12 +56,10 @@ header {
     height: 40px;
 }
 
-/* MENU FECHADO POR PADRÃO*/
 nav {
     display: none;
 }
 
-/* QUANDO O CHECKBOX ESTÁ MARCADO, O MENU APARECE */
 #menu:checked ~ nav {
     display: block;
     position: absolute;
@@ -90,7 +89,6 @@ nav {
     padding: 10px 0;
 }
 
-/* AREA WHATSAPP */
 .whatsapp-container {
     box-sizing: border-box;
     padding: 20px;
@@ -109,6 +107,9 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background-color 0.25s ease;
 }
 
 .whatsapp-button img {
@@ -120,7 +121,6 @@ nav {
     display: none;
 }
 
-/* MEDIA QUERRY */
 @media screen and (min-width: 768px) {
     .list-links li a{
         font-size: 18px;
@@ -204,8 +204,9 @@ nav {
     }
 
     .whatsapp-button:hover {
-        background-color: #128C7E;
-}
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
     
     .list-links li a {
         font-size: 14px;
@@ -215,7 +216,7 @@ nav {
     }
 
     .list-links li a:hover {
-        color: #128C7E;
+        color: #000000;
     }
     
     .list-links {
@@ -226,5 +227,15 @@ nav {
     
     .list-links li {
         margin: 0;
+    }
+}
+
+body {
+    padding-top: 84px;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding-top: 64px;
     }
 }
