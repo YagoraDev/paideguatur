@@ -91,4 +91,7 @@
         width: 300px;
         height: 212px;
     }
+    .why-us-container .title h2 {
+    font-size: 2rem;
+    }
 }

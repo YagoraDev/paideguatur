@@ -192,4 +192,7 @@
     .about-container a.whatsapp-button:hover {
         background-color: #128C7E;
     }
+    .about-info h2 {
+    font-size: 2rem;
+    }
 }

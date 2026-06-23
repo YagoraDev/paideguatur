@@ -28,13 +28,8 @@ header {
 
 .logo-container h3 {
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Montserrat-ExtraBold";
-}
-
-.logo-container img {
-    width: 60px;
-    height: 60px;
 }
 
 /* AREA MENU */
@@ -74,7 +69,6 @@ nav {
     width: 100%;
     background-color: #fdca3a;
     z-index: 100;
-    padding: 20px 0;
 }
 
 .list-links {
@@ -90,7 +84,7 @@ nav {
 .list-links li a {
     color: black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     display: block;
     padding: 10px 0;
@@ -109,9 +103,9 @@ nav {
     color: white;
     text-decoration: none;
     padding: 12px 24px;
-    border-radius: 24px;
+    border-radius: 32px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
     width: 100%;

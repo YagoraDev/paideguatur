@@ -1,7 +1,6 @@
 footer {
     width: 100%;
     background-color: oklch(35.977% 0.08197 249.872);
-    height: 700px;
 
 }
 
@@ -10,33 +9,84 @@ footer {
     flex-direction: column;
     width: 100%;
     max-width: 1300px;
-    padding: 80px 20px;
+    padding: 60px 20px 0px;
     margin: 0 auto;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: rgb(225, 220, 206);
+    line-height: 22px;
+    font-size: .875rem;
 }
 
 .footer-container a.logo-container {
     justify-content: flex-start;
 }
 
+.footer-container .logo-container h3 {
+    color: white;
+} 
+
+.footer-container .logo-info p {
+    color: rgb(225, 220, 206);
+    line-height: 20px;
+    font-size: .875rem;
+    margin: 20px 0;
+}
+
+.footer-container .social-midia {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.footer-container #icone-whatzApp {
+    background-color: oklch(55.489% 0.17662 140.501);
+}
+
+.footer-container .background-icone {
+    display: flex;
+    background-color: rgba(126, 126, 126, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer-navigation {
     display: flex;
     flex-direction: column;
     color: white;
+    gap: 10px;
+    margin-bottom: 40px;
 }
 
-.footer-navigation a {
-    text-decoration: none;
-    color: white;
+.footer-container h4 {
+    margin-bottom: 10px;
+    font-family: "Poppins";
 }
 
 .footer-contact {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #9b9b9b;
-
+    color: white;
+    gap: 10px;
+    padding-bottom: 40px;
 }
 
 .footer-contact a{
-    text-decoration: none;
-    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rights-reserved {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 20px 20px;
+    text-align: center;
+    font-size: .875rem;
 }
