@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-  <title>PaideguaViagens</title>
+  <link rel="stylesheet" href="css/passeio.css" />
+  <title>PaideguaViagens — Passeio</title>
 </head>
+
 <body>
-    <header>
+  <header>
     <div class="header-container">
       <a href="index.html" class="logo-container">
         <img src="img/logo.png" alt="Imagem da logo" />
@@ -31,19 +33,182 @@
           </ul>
           <!-- WHATSAPP MOBILE - DENTRO DA NAV -->
           <div class="whatsapp-container">
-            <a class="whatsapp-button" href="#"><img src="img/whatsapp-logo.png" alt="Imagem da logo whatsApp" />Falar
-              no WhatsApp</a>
+            <a class="whatsapp-button" href="https://wa.me/559188488129"><img src="img/whatsapp-logo.png"
+                alt="Imagem da logo whatsApp" />Falar no WhatsApp</a>
           </div>
         </nav>
 
         <!-- WHATSAPP DESKTOP - FORA DA NAV -->
         <div class="whatsapp-desktop">
-          <a class="whatsapp-button" href="#"><img src="img/whatsapp-logo.png" alt="Imagem da logo whatsApp" />Falar no
-            WhatsApp</a>
+          <a class="whatsapp-button" href="https://wa.me/559188488129"><img src="img/whatsapp-logo.png"
+              alt="Imagem da logo whatsApp" />Falar no WhatsApp</a>
         </div>
       </div>
     </div>
   </header>
+
+  <main>
+    <!-- BANNER PRINCIPAL -->
+    <section class="passeio-banner">
+      <figure class="passeio-banner-media">
+        Imagem do passeio
+      </figure>
+      <div class="passeio-banner-content">
+        <p class="passeio-label">Destino</p>
+        <h1>Título do passeio</h1>
+        <p class="passeio-subtitle">Subtítulo ou pequena descrição do passeio.</p>
+      </div>
+    </section>
+
+    <!-- INFORMAÇÕES RÁPIDAS -->
+    <section class="passeio-quick-info">
+      <div class="passeio-quick-container">
+        <div class="card">
+          <h4>Duração</h4>
+          <p>Duração do passeio</p>
+        </div>
+        <div class="card">
+          <h4>Localização</h4>
+          <p>Localização</p>
+        </div>
+        <div class="card">
+          <h4>Horário</h4>
+          <p>Horário de saída</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O PASSEIO -->
+    <section class="passeio-section">
+      <div class="passeio-section-container">
+        <p class="passeio-label">Sobre o passeio</p>
+        <h2>Sobre o passeio</h2>
+        <p>Descrição do passeio.</p>
+      </div>
+    </section>
+
+    <!-- ROTEIRO -->
+    <section class="passeio-section">
+      <div class="passeio-section-container">
+        <p class="passeio-label">Roteiro</p>
+        <h2>Roteiro</h2>
+        <div class="roteiro-blocks">
+          <article class="roteiro-block">
+            <span class="roteiro-day">Dia 1</span>
+            <h3>Título da etapa</h3>
+            <p>Texto do roteiro.</p>
+          </article>
+          <article class="roteiro-block">
+            <span class="roteiro-day">Dia 2</span>
+            <h3>Título da etapa</h3>
+            <p>Texto do roteiro.</p>
+          </article>
+          <article class="roteiro-block">
+            <span class="roteiro-day">Dia 3</span>
+            <h3>Título da etapa</h3>
+            <p>Texto do roteiro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="passeio-section">
+      <div class="passeio-section-container">
+        <p class="passeio-label">Galeria</p>
+        <h2>Galeria de imagens</h2>
+        <div class="galeria-grid">
+          <figure class="galeria-item">Imagem 1</figure>
+          <figure class="galeria-item">Imagem 2</figure>
+          <figure class="galeria-item">Imagem 3</figure>
+          <figure class="galeria-item">Imagem 4</figure>
+          <figure class="galeria-item">Imagem 5</figure>
+          <figure class="galeria-item">Imagem 6</figure>
+          <figure class="galeria-item">Imagem 7</figure>
+          <figure class="galeria-item">Imagem 8</figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE ESTÁ INCLUSO -->
+    <section class="passeio-section">
+      <div class="passeio-section-container">
+        <p class="passeio-label">Incluso</p>
+        <h2>O que está incluso</h2>
+        <div class="passeio-list">
+          <div class="passeio-list-item included">
+            <span class="marker">✓</span>
+            <p>Item incluso</p>
+          </div>
+          <div class="passeio-list-item included">
+            <span class="marker">✓</span>
+            <p>Item incluso</p>
+          </div>
+          <div class="passeio-list-item included">
+            <span class="marker">✓</span>
+            <p>Item incluso</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE NÃO ESTÁ INCLUSO -->
+    <section class="passeio-section">
+      <div class="passeio-section-container">
+        <p class="passeio-label">Não incluso</p>
+        <h2>O que não está incluso</h2>
+        <div class="passeio-list">
+          <div class="passeio-list-item not-included">
+            <span class="marker">✕</span>
+            <p>Item não incluso</p>
+          </div>
+          <div class="passeio-list-item not-included">
+            <span class="marker">✕</span>
+            <p>Item não incluso</p>
+          </div>
+          <div class="passeio-list-item not-included">
+            <span class="marker">✕</span>
+            <p>Item não incluso</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMAÇÕES IMPORTANTES -->
+    <section class="passeio-section">
+      <div class="passeio-section-container">
+        <p class="passeio-label">Atenção</p>
+        <h2>Informações importantes</h2>
+        <div class="info-important-grid">
+          <article class="info-important-card">
+            <h3>Título da informação</h3>
+            <p>Informação importante.</p>
+          </article>
+          <article class="info-important-card">
+            <h3>Título da informação</h3>
+            <p>Informação importante.</p>
+          </article>
+          <article class="info-important-card">
+            <h3>Título da informação</h3>
+            <p>Informação importante.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD DE PREÇO -->
+    <section class="passeio-price">
+      <div class="passeio-price-container">
+        <div class="passeio-price-card">
+          <p class="price-label">A partir de</p>
+          <p class="price-value">Preço</p>
+          <p class="price-note">Informação sobre o preço</p>
+          <a class="whatsapp-button" href="https://wa.me/559188488129"><img src="img/whatsapp-logo.png"
+              alt="Logo do WhatsApp">Reservar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-container">
@@ -70,11 +235,11 @@
 
       <div class="footer-navigation">
         <h4>Navegue</h4>
-        <a href="#destinos">Destinos</a>
-        <a href="#porque-nos">Por que nós</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#">Contato</a>
+        <a href="index.html#destinos">Destinos</a>
+        <a href="index.html#porque-nos">Por que nós</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#depoimentos">Depoimentos</a>
+        <a href="index.html#contato">Contato</a>
       </div>
 
       <div class="footer-contact">
@@ -90,5 +255,7 @@
       <p>© 2026 Pai D'égua Viagens. Todos os direitos reservados.</p>
     </div>
   </footer>
+
 </body>
+
 </html>
