@@ -1,14 +1,6 @@
-/* =========================================================
-   PASSEIO.CSS
-   Estilo complementar das páginas de passeio (teste1 a teste4).
-   Reaproveita tokens, cores, tipografia e componentes já
-   existentes no projeto (header, footer, whatsapp-button, cards).
-   ========================================================= */
-
-/* ---------- BOTÃO VOLTAR ---------- */
 .passeio-back {
     width: 100%;
-    background-color: rgb(255, 247, 247);
+    background-color: var(--cor-branco-gelo);
 }
 
 .passeio-back-container {
@@ -21,22 +13,23 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: rgb(0, 58, 98);
-    font-family: "Poppins";
+    color: var(--azul-titulo);
+    font-family: var(--fonte-texto);
     font-size: 15px;
     text-decoration: none;
     padding: 6px 4px;
-    transition: color 0.25s ease, transform 0.25s ease;
+    transition: color var(--transicao-padrao),
+                transform var(--transicao-padrao);
 }
 
 .passeio-back-link svg {
     width: 18px;
     height: 18px;
-    transition: transform 0.25s ease;
+    transition: transform var(--transicao-padrao);
 }
 
 .passeio-back-link:hover {
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
 }
 
 .passeio-back-link:hover svg {
@@ -46,7 +39,7 @@
 /* ---------- CABEÇALHO DO PASSEIO (TÍTULO) ---------- */
 .passeio-header {
     width: 100%;
-    background-color: rgb(255, 247, 247);
+    background-color: var(--cor-branco-gelo);
 }
 
 .passeio-header-container {
@@ -61,20 +54,20 @@
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 900;
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
     margin-bottom: 12px;
 }
 
 .passeio-header-container h1 {
     font-size: 2rem;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-titulo);
+    color: var(--azul-titulo);
     line-height: 1.2;
     margin-bottom: 14px;
 }
 
 .passeio-header-container .passeio-subtitle {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     line-height: 24px;
     max-width: 720px;
 }
@@ -82,7 +75,7 @@
 /* ---------- INFORMAÇÕES RÁPIDAS ---------- */
 .passeio-quick-info {
     width: 100%;
-    background-color: rgb(255, 247, 247);
+    background-color: var(--cor-branco-gelo);
 }
 
 .passeio-quick-container {
@@ -100,11 +93,12 @@
     gap: 14px;
     flex: 1;
     min-width: 170px;
-    background-color: white;
+    background-color: var(--cor-branco);
     padding: 18px 20px;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: var(--borda-arredondada-imagem-card);
+    box-shadow: var(--sombra-card);
+    transition: transform var(--transicao-padrao),
+                box-shadow var(--transicao-padrao);
 }
 
 .passeio-quick-container .card:hover {
@@ -121,7 +115,7 @@
     flex-shrink: 0;
     border-radius: 14px;
     background-color: rgb(230, 249, 253);
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
 }
 
 .passeio-quick-container .card-icon svg {
@@ -130,17 +124,17 @@
 }
 
 .passeio-quick-container .card h4 {
-    font-size: 12px;
+    font-size: var(--tamanho-texto-pequeno);
     letter-spacing: 1px;
     font-weight: 900;
     text-transform: uppercase;
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
     margin-bottom: 5px;
 }
 
 .passeio-quick-container .card p {
-    color: rgb(0, 58, 98);
-    font-family: "Poppins";
+    color: var(--azul-titulo);
+    font-family: var(--fonte-texto);
     font-size: 15px;
     line-height: 1.3;
 }
@@ -151,11 +145,11 @@
 }
 
 .passeio-section:nth-of-type(even) {
-    background-color: rgb(255, 247, 247);
+    background-color: var(--cor-branco-gelo);
 }
 
 .passeio-section:nth-of-type(odd) {
-    background-color: rgb(248, 234, 206);
+    background-color: var(--fundo-amarelo-claro);
 }
 
 .passeio-section-container {
@@ -170,20 +164,20 @@
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 900;
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
     margin-bottom: 12px;
 }
 
 .passeio-section-container h2 {
     font-size: 1.7rem;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-titulo);
+    color: var(--azul-titulo);
     line-height: 35px;
     margin-bottom: 20px;
 }
 
 .passeio-section-container > p {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     line-height: 24px;
     max-width: 820px;
 }
@@ -209,9 +203,9 @@
     width: 100%;
     height: 320px;
     border-radius: 22px;
-    background-color: oklch(35.977% 0.08197 249.872);
-    color: rgb(225, 220, 206);
-    font-family: "Poppins";
+    background-color: var(--fundo-footer);
+    color: var(--texto-footer);
+    font-family: var(--fonte-texto);
     font-size: 16px;
     letter-spacing: 1px;
     text-align: center;
@@ -219,8 +213,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Fundo desfocado usando a própria imagem: preenche a área
-   e evita faixas vazias quando a foto é vertical. */
+/* Fundo desfocado usando a própria imagem */
 .galeria-main-bg {
     position: absolute;
     inset: 0;
@@ -245,12 +238,10 @@
     object-position: center;
 }
 
-/* Foto horizontal: preenche toda a área (visual moderno). */
 .galeria-main.is-landscape .galeria-main-img {
     object-fit: cover;
 }
 
-/* Foto vertical: aparece inteira, sem cortes exagerados. */
 .galeria-main.is-portrait .galeria-main-img {
     object-fit: contain;
 }
@@ -276,17 +267,20 @@
     padding: 8px;
     border: 3px solid transparent;
     border-radius: 16px;
-    background-color: oklch(35.977% 0.08197 249.872);
+    background-color: var(--fundo-footer);
     background-size: cover;
     background-position: center;
-    color: rgb(225, 220, 206);
-    font-family: "Poppins";
-    font-size: 12px;
+    color: var(--texto-footer);
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto-pequeno);
     text-align: center;
     cursor: pointer;
     overflow: hidden;
     opacity: 0.75;
-    transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+    transition:
+        opacity var(--transicao-padrao),
+        transform var(--transicao-padrao),
+        border-color var(--transicao-padrao);
 }
 
 .galeria-thumb:hover {
@@ -296,7 +290,7 @@
 
 .galeria-thumb.active {
     opacity: 1;
-    border-color: rgb(0, 185, 216);
+    border-color: var(--azul-claro);
 }
 
 /* ---------- ROTEIRO ---------- */
@@ -312,12 +306,13 @@
     flex-direction: column;
     gap: 14px;
     position: relative;
-    background-color: white;
+    background-color: var(--cor-branco);
     padding: 26px;
-    border-radius: 25px;
-    border-left: 6px solid rgb(0, 185, 216);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: var(--borda-arredondada-imagem-card);
+    border-left: 6px solid var(--azul-claro);
+    box-shadow: var(--sombra-card);
+    transition: transform var(--transicao-padrao),
+                box-shadow var(--transicao-padrao);
 }
 
 .roteiro-block:hover {
@@ -329,9 +324,9 @@
     display: inline-flex;
     align-items: center;
     align-self: flex-start;
-    background-color: #fdca3a;
+    background-color: var(--cor-destaque-amarelo);
     color: oklch(34% .09 245);
-    font-family: "Montserrat-ExtraBold";
+    font-family: var(--fonte-titulo);
     font-size: 15px;
     letter-spacing: 0.5px;
     padding: 8px 20px;
@@ -340,14 +335,14 @@
 }
 
 .roteiro-block h3 {
-    font-family: "Poppins";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-texto);
+    color: var(--azul-titulo);
     font-size: 18px;
     margin-bottom: 10px;
 }
 
 .roteiro-block p {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     line-height: 24px;
 }
 
@@ -364,7 +359,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background-color: white;
+    background-color: var(--cor-branco);
     padding: 12px 18px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -378,9 +373,9 @@
     height: 22px;
     border-radius: 100%;
     flex-shrink: 0;
-    font-family: "Montserrat-ExtraBold";
+    font-family: var(--fonte-titulo);
     font-size: 14px;
-    color: white;
+    color: var(--cor-branco);
 }
 
 .passeio-list-item.included .marker {
@@ -392,7 +387,7 @@
 }
 
 .passeio-list-item p {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     line-height: 1.3;
 }
 
@@ -405,22 +400,22 @@
 }
 
 .info-important-card {
-    background-color: white;
-    border-left: 5px solid rgb(0, 185, 216);
+    background-color: var(--cor-branco);
+    border-left: 5px solid var(--azul-claro);
     padding: 20px;
     border-radius: 18px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .info-important-card h3 {
-    font-family: "Poppins";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-texto);
+    color: var(--azul-titulo);
     font-size: 16px;
     margin-bottom: 8px;
 }
 
 .info-important-card p {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     line-height: 22px;
 }
 
@@ -444,9 +439,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: var(--cor-branco);
     padding: 50px 30px;
-    border-radius: 25px;
+    border-radius: var(--borda-arredondada-imagem-card);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 720px;
@@ -454,14 +449,14 @@
 
 .passeio-price-card .price-title {
     font-size: 1.8rem;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-titulo);
+    color: var(--azul-titulo);
     line-height: 1.2;
     margin-bottom: 12px;
 }
 
 .passeio-price-card .price-subtitle {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     font-size: 16px;
     line-height: 24px;
     max-width: 480px;
@@ -474,7 +469,7 @@
     align-items: center;
     width: 100%;
     max-width: 440px;
-    background-color: rgb(255, 247, 247);
+    background-color: var(--cor-branco-gelo);
     padding: 26px 24px;
     border-radius: 22px;
     margin-bottom: 30px;
@@ -484,26 +479,26 @@
     font-size: 13px;
     letter-spacing: 2px;
     font-weight: 900;
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
     margin-bottom: 10px;
 }
 
 .passeio-price-card .price-value {
     font-size: 2.8rem;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-titulo);
+    color: var(--azul-titulo);
     margin-bottom: 8px;
 }
 
 .passeio-price-card .price-note {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     font-size: 14px;
 }
 
 .passeio-price-card a.whatsapp-button {
     display: flex;
     background-color: oklch(68% .18 145);
-    color: white;
+    color: var(--cor-branco);
     text-decoration: none;
     padding: 14px 28px;
     border-radius: 36px;
@@ -515,7 +510,10 @@
     width: 100%;
     max-width: 520px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    transition:
+        transform var(--transicao-padrao),
+        box-shadow var(--transicao-padrao),
+        background-color var(--transicao-padrao);
 }
 
 .passeio-price-card a.whatsapp-button:hover {
@@ -530,31 +528,26 @@
     margin-right: 10px;
 }
 
-/* ---------- MEDIA QUERRY ---------- */
+/* ---------- MEDIA QUERY ---------- */
 @media screen and (min-width: 768px) {
     .passeio-header-container {
         padding: 60px 20px 30px;
     }
-
     .passeio-header-container h1 {
         font-size: 2.4rem;
     }
-
     .passeio-section-container h2 {
         font-size: 2rem;
     }
-
     .galeria {
         flex-direction: row;
         align-items: stretch;
         gap: 18px;
     }
-
     .galeria-main {
         flex: 1 1 66%;
         height: 520px;
     }
-
     .galeria-thumbs {
         flex: 1 1 34%;
         grid-template-columns: repeat(2, 1fr);
@@ -562,12 +555,10 @@
         align-content: start;
         gap: 14px;
     }
-
     .galeria-thumb {
         aspect-ratio: 4 / 3;
         font-size: 13px;
     }
-
     .roteiro-block {
         padding: 30px;
     }
@@ -577,11 +568,9 @@
     .passeio-header-container h1 {
         font-size: 2.8rem;
     }
-
     .passeio-section-container h2 {
         font-size: 2.2rem;
     }
-
     .galeria-main {
         height: 560px;
     }

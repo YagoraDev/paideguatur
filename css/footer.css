@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    background-color: oklch(35.977% 0.08197 249.872);
+    background-color: var(--fundo-footer);
 }
 
 .footer-container {
@@ -8,12 +8,12 @@ footer {
     flex-direction: column;
     width: 100%;
     max-width: 500px;
-    padding: 60px 20px 0px;
+    padding: 60px 20px 0;
 }
 
 .footer-container a {
     text-decoration: none;
-    color: rgb(225, 220, 206);
+    color: var(--texto-footer);
     line-height: 22px;
     font-size: .875rem;
 }
@@ -23,11 +23,11 @@ footer {
 }
 
 .footer-container .logo-container h3 {
-    color: white;
-} 
+    color: var(--cor-branco);
+}
 
 .footer-container .logo-info p {
-    color: rgb(225, 220, 206);
+    color: var(--texto-footer);
     line-height: 20px;
     font-size: .875rem;
     margin: 10px 0 20px;
@@ -56,59 +56,65 @@ footer {
 .footer-navigation {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--cor-branco);
     gap: 10px;
     margin-bottom: 40px;
 }
 
 .footer-container h4 {
     margin-bottom: 10px;
-    font-family: "Poppins";
+    font-family: var(--fonte-texto);
 }
 
 .footer-contact {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--cor-branco);
     gap: 10px;
     padding-bottom: 40px;
 }
 
-.footer-contact a{
+.footer-contact a {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 .rights-reserved {
-    color: rgba(255, 255, 255, 0.6);
-    padding: 20px 20px 20px;
+    color: var(--texto-footer-secundario);
+    padding: 20px;
     text-align: center;
     font-size: .875rem;
     width: 100%;
-    border-top: 1px solid rgba(155, 155, 155, 0.5);
+    border-top: 1px solid var(--borda-footer);
 }
 
-/* MEDIA QUERRY */
+/* MEDIA QUERY */
 @media screen and (min-width: 1024px) {
+
     .footer-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1300px;
-    margin: 0 auto;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        max-width: 1300px;
+        margin: 0 auto;
+        justify-content: space-between;
     }
+
     .footer-container .logo-info {
         width: 100%;
         max-width: 30%;
     }
+
     .footer-container .background-icone:hover {
         background-color: rgba(126, 126, 126, 0.4);
     }
+
     .footer-container #icone-whatzApp:hover {
         background-color: rgba(126, 126, 126, 0.4);
     }
+
     .footer-navigation a:hover {
-        color: rgb(251, 200, 57);;
+        color: rgb(251, 200, 57);
     }
+
 }

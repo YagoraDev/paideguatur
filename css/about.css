@@ -1,6 +1,6 @@
 .about {
     width: 100%;
-    background-color: rgb(255, 247, 247);
+    background-color: var(--cor-branco-gelo);
 }
 
 .about-container {
@@ -12,7 +12,8 @@
     padding: 80px auto;
 }
 
-#paidegua-tablet, #paidegua-desktop {
+#paidegua-tablet,
+#paidegua-desktop {
     display: none;
 }
 
@@ -24,7 +25,7 @@
 .about-logo-paidegua img {
     display: block;
     width: 100%;
-    border-radius: 20px;
+    border-radius: var(--borda-arredondada-localizacao);
 }
 
 .about-info {
@@ -36,19 +37,19 @@
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 900;
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
 }
 
 .about-info h2 {
     font-size: 1.7rem;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-titulo);
+    color: var(--azul-titulo);
     line-height: 35px;
     margin: 10px 0 20px 0;
 }
 
 .about-info p {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
     line-height: 22px;
 }
 
@@ -56,16 +57,16 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 20px;          
-    width: 100%;              
-    align-items: flex-start;  
+    padding: 0 20px;
+    width: 100%;
+    align-items: flex-start;
 }
 
 .checked-item {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 12px;      
+    margin-bottom: 12px;
 }
 
 .about-checked .checked {
@@ -74,36 +75,35 @@
     justify-content: center;
     width: 20px;
     height: 20px;
-    background-color: oklch(58% .13 150);
+    background-color: var(--cor-check);
     border-radius: 100%;
-    flex-shrink: 0;           
+    flex-shrink: 0;
 }
 
 .about-checked .checked img {
-    width: 12px;              
+    width: 12px;
     height: 12px;
-    display: block;           
+    display: block;
 }
 
 .checked-item p {
-    margin: 0;                
-    line-height: 1.2;         
+    margin: 0;
+    line-height: 1.2;
 }
 
 .about-container a.whatsapp-button {
     display: flex;
-    background-color: oklch(68% .18 145);
-    color: white;
+    background-color: var(--cor-whatsapp);
+    color: var(--cor-branco);
     text-decoration: none;
     padding: 12px 24px;
-    border-radius: 24px;
-    font-size: 14px;
+    border-radius: var(--borda-arredondada-card);
+    font-size: var(--tamanho-texto-botao);
     height: 45px;
     align-items: center;
     width: 250px;
-    align-self: flex-start; 
-    margin: 20px 0 80px 20px;    
-    
+    align-self: flex-start;
+    margin: 20px 0 80px 20px;
 }
 
 .about-container a.whatsapp-button img {
@@ -111,9 +111,11 @@
     height: 20px;
 }
 
-/* MEDIA QUERRY */
+/* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-    #paidegua-mobile, #paidegua-desktop {
+
+    #paidegua-mobile,
+    #paidegua-desktop {
         display: none;
     }
 
@@ -136,7 +138,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-    #paidegua-tablet, #paidegua-mobile {
+
+    #paidegua-tablet,
+    #paidegua-mobile {
         display: none;
     }
 
@@ -153,21 +157,20 @@
     }
 
     .about-logo-paidegua {
-        width: 40%;            
-        flex-shrink: 0;        
-        padding: 0;
+        width: 40%;
+        flex-shrink: 0;
         padding: 0 0 0 20px;
     }
 
     .about-logo-paidegua img {
         width: 100%;
         height: auto;
-        border-radius: 20px;
+        border-radius: var(--borda-arredondada-localizacao);
         object-fit: cover;
     }
 
     .about-details {
-        width: 60%;            
+        width: 60%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -185,11 +188,11 @@
     }
 
     .about-container a.whatsapp-button {
-        margin: 20px 0 0 0;    
+        margin: 20px 0 0;
         align-self: flex-start;
     }
 
     .about-info h2 {
-    font-size: 2rem;
+        font-size: 2rem;
     }
 }

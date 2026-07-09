@@ -1,6 +1,6 @@
 .get-in-touch {
     width: 100%;
-    background: linear-gradient(to right, rgb(25, 130, 190), rgb(9, 92, 148));
+    background: var(--gradiente-azul);
 }
 
 .container-get-in-touch {
@@ -16,25 +16,25 @@
 
 .container-get-in-touch h2 {
     font-size: 1.7rem;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(255, 255, 255);
+    font-family: var(--fonte-titulo);
+    color: var(--cor-branco);
 }
 
 .container-get-in-touch p {
     font-size: 16px;
     line-height: 22px;
-    color: rgb(255, 255, 255);
+    color: var(--cor-branco);
     opacity: 70%;
     margin-top: 20px;
 }
 
 .container-get-in-touch a.whatsapp-button {
     display: flex;
-    background-color: oklch(68% .18 145);
-    color: white;
+    background-color: var(--cor-whatsapp);
+    color: var(--cor-branco);
     text-decoration: none;
     padding: 12px 24px;
-    border-radius: 32px;
+    border-radius: var(--borda-arredondada-botao);
     font-size: 16px;
     height: 60px;
     align-items: center;
@@ -42,17 +42,21 @@
     margin: 30px 0 0;
 }
 
-/* MEDIA QUERRY */
+/* MEDIA QUERY */
 @media screen and (min-width: 768px) {
+
     .container-get-in-touch h2 {
         font-size: 2rem;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
+
     .container-get-in-touch h2 {
         font-size: 3rem;
     }
+
     .container-get-in-touch p {
         font-size: 18px;
     }

@@ -1,5 +1,5 @@
 .why-us {
-    background-color: rgb(248, 234, 206);
+    background-color: var(--fundo-amarelo-claro);
     width: 100%;
     padding: 40px 0 90px 0;
 }
@@ -20,15 +20,15 @@
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 900;
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
     margin: 60px 0 10px 0;
 }
 
 .why-us-container .title h2 {
     font-size: 1.7rem;
     margin-top: 20px;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-titulo);
+    color: var(--azul-titulo);
     line-height: 35px;
 }
     
@@ -40,34 +40,32 @@
     gap: 20px;
     padding: 20px;
     margin-top: 50px;
-    
 }
 
 .why-us-cards .card {
-    background-color: white;
+    background-color: var(--cor-branco);
     width: 100%;
     max-width: 382px;
     padding: 25px;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: var(--borda-arredondada-imagem-card);
+    box-shadow: var(--sombra-card);
     flex-wrap: wrap;
-
 }
 
 .why-us-cards .card h3 {
-    font-family: "Poppins";
+    font-family: var(--fonte-texto);
     margin: 15px 0;
-    color: rgb(0, 58, 98);
+    color: var(--azul-titulo);
     font-size: 18px;
 }
 
 .why-us-cards .card p {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza-secundario);
 }
 
 .why-us-cards .card .icone-blue {
     display: flex;
-    background-color: oklch(43.916% 0.10875 246.08);
+    background-color: var(--cor-icone-azul);
     width: 48px;
     height: 48px;
     border-radius: 100%;
@@ -75,7 +73,7 @@
     align-items: center;
 }
 
-/* MEDIA QUERRY */
+/* MEDIA QUERY */
 @media screen and (min-width: 768px) {
     .why-us-container .title h3 {
         font-size: 15px;
@@ -91,7 +89,8 @@
         width: 300px;
         height: 212px;
     }
+
     .why-us-container .title h2 {
-    font-size: 2rem;
+        font-size: 2rem;
     }
 }
