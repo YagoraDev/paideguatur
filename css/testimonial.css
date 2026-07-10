@@ -90,6 +90,9 @@
         display: flex;
         gap: 20px;
     }
+    .testimonial-container .title h3 {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
