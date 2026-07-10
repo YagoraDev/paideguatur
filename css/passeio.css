@@ -1,11 +1,22 @@
-.passeio-back {
+/* ---------- FUNDOS COMPARTILHADOS ---------- */
+.passeio-back,
+.passeio-header,
+.passeio-quick-info {
     width: 100%;
     background-color: var(--cor-branco-gelo);
 }
 
-.passeio-back-container {
+/* ---------- CONTAINERS (largura/centralização compartilhadas) ---------- */
+.passeio-back-container,
+.passeio-header-container,
+.passeio-quick-container,
+.passeio-section-container,
+.passeio-price-container {
     max-width: 1300px;
     margin: 0 auto;
+}
+
+.passeio-back-container {
     padding: 22px 20px 0;
 }
 
@@ -36,26 +47,20 @@
     transform: translateX(-4px);
 }
 
-/* ---------- CABEÇALHO DO PASSEIO (TÍTULO) ---------- */
-.passeio-header {
-    width: 100%;
-    background-color: var(--cor-branco-gelo);
-}
-
-.passeio-header-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 45px 20px 25px;
-}
-
-.passeio-header-container .passeio-label {
+/* ---------- LABEL PADRÃO (usado no cabeçalho e nas seções) ---------- */
+.passeio-label {
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 900;
     color: var(--azul-claro);
     margin-bottom: 12px;
+}
+
+/* ---------- CABEÇALHO DO PASSEIO (TÍTULO) ---------- */
+.passeio-header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 20px 25px;
 }
 
 .passeio-header-container h1 {
@@ -66,33 +71,29 @@
     margin-bottom: 14px;
 }
 
-.passeio-header-container .passeio-subtitle {
+.passeio-subtitle,
+.passeio-price-card .price-subtitle {
     color: var(--texto-cinza-secundario);
     line-height: 24px;
+}
+
+.passeio-subtitle {
     max-width: 720px;
 }
 
 /* ---------- INFORMAÇÕES RÁPIDAS ---------- */
-.passeio-quick-info {
-    width: 100%;
-    background-color: var(--cor-branco-gelo);
-}
-
 .passeio-quick-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
     padding: 15px 20px 45px;
 }
 
 .passeio-quick-container .card {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 14px;
-    flex: 1;
-    min-width: 170px;
+    flex: 1 1 100%;
     background-color: var(--cor-branco);
     padding: 18px 20px;
     border-radius: var(--borda-arredondada-imagem-card);
@@ -155,17 +156,7 @@
 .passeio-section-container {
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
-    margin: 0 auto;
     padding: 70px 20px;
-}
-
-.passeio-section-container .passeio-label {
-    font-size: 14px;
-    letter-spacing: 2px;
-    font-weight: 900;
-    color: var(--azul-claro);
-    margin-bottom: 12px;
 }
 
 .passeio-section-container h2 {
@@ -176,9 +167,13 @@
     margin-bottom: 20px;
 }
 
-.passeio-section-container > p {
+.passeio-section-container > p,
+.roteiro-block p {
     color: var(--texto-cinza-secundario);
     line-height: 24px;
+}
+
+.passeio-section-container > p {
     max-width: 820px;
 }
 
@@ -341,11 +336,6 @@
     margin-bottom: 10px;
 }
 
-.roteiro-block p {
-    color: var(--texto-cinza-secundario);
-    line-height: 24px;
-}
-
 /* ---------- INCLUSO / NÃO INCLUSO ---------- */
 .passeio-list {
     display: flex;
@@ -355,6 +345,11 @@
     max-width: 820px;
 }
 
+.passeio-list-item,
+.info-important-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
 .passeio-list-item {
     display: flex;
     align-items: center;
@@ -362,7 +357,6 @@
     background-color: var(--cor-branco);
     padding: 12px 18px;
     border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .passeio-list-item .marker {
@@ -404,7 +398,6 @@
     border-left: 5px solid var(--azul-claro);
     padding: 20px;
     border-radius: 18px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .info-important-card h3 {
@@ -430,8 +423,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 1300px;
-    margin: 0 auto;
     padding: 70px 20px;
 }
 
@@ -456,9 +447,7 @@
 }
 
 .passeio-price-card .price-subtitle {
-    color: var(--texto-cinza-secundario);
     font-size: 16px;
-    line-height: 24px;
     max-width: 480px;
     margin-bottom: 30px;
 }
@@ -490,30 +479,36 @@
     margin-bottom: 8px;
 }
 
-.passeio-price-card .price-note {
-    color: var(--texto-cinza-secundario);
-    font-size: 14px;
+/* Botões de ação do card de preço (Reservar + Voltar aos roteiros) */
+.passeio-price-card .price-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 520px;
 }
 
-.passeio-price-card a.whatsapp-button {
+.passeio-price-card a.whatsapp-button,
+.passeio-price-card a.secondary-button {
     display: flex;
-    background-color: oklch(68% .18 145);
-    color: var(--cor-branco);
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     padding: 14px 28px;
     border-radius: 36px;
     font-weight: bold;
     font-size: 19px;
     height: 68px;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    max-width: 520px;
+    transition: transform var(--transicao-padrao),
+                box-shadow var(--transicao-padrao),
+                background-color var(--transicao-padrao);
+}
+
+.passeio-price-card a.whatsapp-button {
+    background-color: oklch(68% .18 145);
+    color: var(--cor-branco);
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
-    transition:
-        transform var(--transicao-padrao),
-        box-shadow var(--transicao-padrao),
-        background-color var(--transicao-padrao);
 }
 
 .passeio-price-card a.whatsapp-button:hover {
@@ -528,6 +523,29 @@
     margin-right: 10px;
 }
 
+/* Botão secundário: fundo branco, borda azul, seta para a esquerda */
+.passeio-price-card a.secondary-button {
+    background-color: var(--cor-branco);
+    color: var(--azul-titulo);
+    border: 2px solid var(--azul-claro);
+    gap: 8px;
+}
+
+.passeio-price-card a.secondary-button svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform var(--transicao-padrao);
+}
+
+.passeio-price-card a.secondary-button:hover {
+    transform: translateY(-3px);
+}
+
+.passeio-price-card a.secondary-button:hover svg {
+    transform: translateX(-4px);
+}
+
 /* ---------- MEDIA QUERY ---------- */
 @media screen and (min-width: 768px) {
     .passeio-header-container {
@@ -538,6 +556,11 @@
     }
     .passeio-section-container h2 {
         font-size: 2rem;
+    }
+    .passeio-quick-container .card {
+        flex: 1;
+        min-width: 170px;
+        align-items: center;
     }
     .galeria {
         flex-direction: row;
@@ -561,6 +584,10 @@
     }
     .roteiro-block {
         padding: 30px;
+    }
+    .passeio-price-card .price-buttons {
+        flex-direction: row;
+        max-width: 640px;
     }
 }
 
