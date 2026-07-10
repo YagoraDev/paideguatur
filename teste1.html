@@ -12,40 +12,48 @@
 <body>
   <header>
     <div class="header-container">
-      <a href="index.html" class="logo-container">
-        <img src="img/logo.png" alt="Imagem da logo" />
-        <h3>PAIDEGUATUR</h3>
-      </a>
 
-      <div class="navigation-menu">
-        <input type="checkbox" id="menu" />
-        <label for="menu" class="menu-icon">
-          <img src="img/menu.png" alt="Icone do menu" />
-        </label>
+        <a href="index.html" class="logo-container">
+            <img src="img/logo.png" alt="Imagem da logo">
+            <h3>PAIDEGUATUR</h3>
+        </a>
 
-        <nav>
-          <ul class="list-links">
-            <li><a href="index.html#destinos">Destinos</a></li>
-            <li><a href="index.html#porque-nos">Por que nós</a></li>
-            <li><a href="index.html#sobre">Sobre</a></li>
-            <li><a href="index.html#depoimentos">Depoimentos</a></li>
-            <li><a href="index.html#contato">Contato</a></li>
-          </ul>
-          <!-- WHATSAPP MOBILE - DENTRO DA NAV -->
-          <div class="whatsapp-container">
-            <a class="whatsapp-button" href="https://wa.me/559188488129"><img src="img/whatsapp-logo.png"
-                alt="Imagem da logo whatsApp" />Falar no WhatsApp</a>
-          </div>
-        </nav>
+        <div class="navigation-menu">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu-icon">
+                <img src="img/menu.png" alt="Ícone do menu">
+            </label>
 
-        <!-- WHATSAPP DESKTOP - FORA DA NAV -->
-        <div class="whatsapp-desktop">
-          <a class="whatsapp-button" href="https://wa.me/559188488129"><img src="img/whatsapp-logo.png"
-              alt="Imagem da logo whatsApp" />Falar no WhatsApp</a>
+            <nav>
+                <ul class="list-links">
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#roteiro">Roteiro</a></li>
+                    <li><a href="#incluso">Incluso</a></li>
+                    <li><a href="#nao-incluso">Não incluso</a></li>
+                    <li><a href="#informacoes">Informações</a></li>
+                    <li><a href="#preco">Preço</a></li>
+                </ul>
+
+                <div class="whatsapp-container">
+                    <a class="whatsapp-button" href="https://wa.me/559188488129">
+                        <img src="img/whatsapp-logo.png" alt="Logo do WhatsApp">
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </nav>
+
+            <div class="whatsapp-desktop">
+                <a class="whatsapp-button" href="https://wa.me/559188488129">
+                    <img src="img/whatsapp-logo.png" alt="Logo do WhatsApp">
+                    Falar no WhatsApp
+                </a>
+            </div>
+
         </div>
-      </div>
+
     </div>
-  </header>
+</header>
 
   <main>
     <!-- VOLTAR -->
@@ -145,7 +153,7 @@
     </section>
 
     <!-- GALERIA -->
-    <section class="passeio-section">
+    <section id="galeria" class="passeio-section">
       <div class="passeio-section-container">
         <p class="passeio-label">Galeria</p>
         <h2>Galeria de imagens</h2>
@@ -168,7 +176,7 @@
     </section>
 
     <!-- SOBRE O PASSEIO -->
-    <section class="passeio-section">
+    <section id="sobre" class="passeio-section">
       <div class="passeio-section-container">
         <p class="passeio-label">Sobre o passeio</p>
         <h2>Sobre o passeio</h2>
@@ -177,7 +185,7 @@
     </section>
 
     <!-- ROTEIRO -->
-    <section class="passeio-section">
+    <section id="roteiro" class="passeio-section">
       <div class="passeio-section-container">
         <p class="passeio-label">Roteiro</p>
         <h2>Roteiro</h2>
@@ -208,7 +216,7 @@
     </section>
 
     <!-- O QUE ESTÁ INCLUSO -->
-    <section class="passeio-section">
+    <section id="incluso" class="passeio-section">
       <div class="passeio-section-container">
         <p class="passeio-label">Incluso</p>
         <h2>O que está incluso</h2>
@@ -230,7 +238,7 @@
     </section>
 
     <!-- O QUE NÃO ESTÁ INCLUSO -->
-    <section class="passeio-section">
+    <section id="nao-incluso" class="passeio-section">
       <div class="passeio-section-container">
         <p class="passeio-label">Não incluso</p>
         <h2>O que não está incluso</h2>
@@ -252,7 +260,7 @@
     </section>
 
     <!-- INFORMAÇÕES IMPORTANTES -->
-    <section class="passeio-section">
+    <section id="informacoes" class="passeio-section">
       <div class="passeio-section-container">
         <p class="passeio-label">Atenção</p>
         <h2>Informações importantes</h2>
@@ -274,7 +282,7 @@
     </section>
 
     <!-- CARD DE PREÇO -->
-    <section class="passeio-price">
+    <section id="preco" class="passeio-price">
       <div class="passeio-price-container">
         <div class="passeio-price-card">
           <h2 class="price-title">Gostou deste passeio?</h2>
@@ -316,11 +324,13 @@
 
       <div class="footer-navigation">
         <h4>Navegue</h4>
-        <a href="index.html#destinos">Destinos</a>
-        <a href="index.html#porque-nos">Por que nós</a>
-        <a href="index.html#sobre">Sobre</a>
-        <a href="index.html#depoimentos">Depoimentos</a>
-        <a href="index.html#contato">Contato</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#roteiro">Roteiro</a>
+        <a href="#incluso">Incluso</a>
+        <a href="#nao-incluso">Não incluso</a>
+        <a href="#informacoes">Informações</a>
+        <a href="#preco">Preço</a>
       </div>
 
       <div class="footer-contact">
@@ -337,72 +347,7 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
-      var main = document.getElementById("galeriaMain");
-      if (!main) return;
-
-      var img = document.getElementById("galeriaMainImg");
-      var bg = document.getElementById("galeriaMainBg");
-      var placeholder = document.getElementById("galeriaPlaceholder");
-      var thumbs = document.querySelectorAll(".galeria-thumb");
-
-      // Ajusta o enquadramento conforme a orientação da foto:
-      // fotos verticais aparecem inteiras (contain) sobre o fundo desfocado,
-      // fotos horizontais preenchem toda a área (cover).
-      function ajustarOrientacao() {
-        if (!img.naturalWidth || !img.naturalHeight) return;
-        var vertical = img.naturalHeight > img.naturalWidth * 1.05;
-        main.classList.toggle("is-portrait", vertical);
-        main.classList.toggle("is-landscape", !vertical);
-      }
-
-      img.addEventListener("load", ajustarOrientacao);
-
-      function mostrarImagem(src, label) {
-        if (src) {
-          if (bg) bg.style.backgroundImage = "url('" + src + "')";
-          img.src = src;
-          img.alt = label || "";
-          img.hidden = false;
-          main.classList.add("has-image");
-          if (placeholder) placeholder.hidden = true;
-          if (img.complete) ajustarOrientacao();
-        } else {
-          img.hidden = true;
-          main.classList.remove("has-image", "is-portrait", "is-landscape");
-          if (bg) bg.style.backgroundImage = "";
-          if (placeholder) {
-            placeholder.hidden = false;
-            placeholder.textContent = label || "";
-          }
-        }
-      }
-
-      thumbs.forEach(function (thumb) {
-        var thumbSrc = thumb.getAttribute("data-src");
-        if (thumbSrc) {
-          thumb.style.backgroundImage = "url('" + thumbSrc + "')";
-          thumb.classList.add("has-image");
-          thumb.textContent = "";
-        }
-        thumb.addEventListener("click", function () {
-          thumbs.forEach(function (t) {
-            t.classList.remove("active");
-          });
-          thumb.classList.add("active");
-          mostrarImagem(thumb.getAttribute("data-src"), thumb.getAttribute("data-label") || "");
-        });
-      });
-
-      // Inicializa com a miniatura ativa (ou a primeira).
-      var inicial = document.querySelector(".galeria-thumb.active") || thumbs[0];
-      if (inicial) {
-        mostrarImagem(inicial.getAttribute("data-src"), inicial.getAttribute("data-label") || "");
-      }
-    })();
-  </script>
-
+  <script src="script.js"></script>
 </body>
 
 </html>

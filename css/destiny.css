@@ -1,6 +1,6 @@
 .destiny {
     width: 100%;
-    background-color: rgb(255, 247, 247);
+    background-color: var(--fundo-claro);
 }
 
 .destiny-container {
@@ -12,23 +12,23 @@
     padding: 90px 20px;
 }
 
-.destiny-title h3{
+.destiny-title h3 {
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 900;
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
 }
 
 .destiny-title h2 {
     font-size: 1.7rem;
     margin-top: 20px;
-    font-family: "Montserrat-ExtraBold";
-    color: rgb(0, 58, 98);
+    font-family: var(--fonte-titulo);
+    color: var(--azul-titulo);
     margin-bottom: 15px;
 }
 
 .destiny-title p {
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza);
     line-height: 22px;
 }
 
@@ -40,7 +40,7 @@
     margin-top: 40px;
 }
 
-.destiny-cards  .card{
+.destiny-cards .card {
     display: flex;
     flex-direction: column;
     max-width: 380px;
@@ -52,43 +52,44 @@
     width: 100%;
     height: 470px;
     object-fit: cover;
-    border-radius: 25px 25px 0 0;
+    border-radius: var(--borda-arredondada-imagem-card) var(--borda-arredondada-imagem-card) 0 0;
 }
 
 .info-card {
-    padding: 20px 20px;
-    border-radius: 0 0 25px 25px;
-    background-color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 0 0 var(--borda-arredondada-imagem-card) var(--borda-arredondada-imagem-card);
+    background-color: var(--cor-branco);
+    box-shadow: var(--sombra-card);
 }
 
 .info-card h3 {
-    color: rgb(0, 58, 98);
+    color: var(--azul-titulo);
     font-size: 18px;
-    font-family: "Poppins";
+    font-family: var(--fonte-texto);
 }
 
 .info-card p {
     margin-top: 10px;
     margin-bottom: 20px;
-    color: rgb(72, 86, 101);
+    color: var(--texto-cinza);
 }
 
 .info-card a {
-    color: rgb(0, 185, 216);
+    color: var(--azul-claro);
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
 }
 
-/* MEDIA QUERRY */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width:768px) {
+
     .destiny-title h2 {
         font-size: 2rem;
         margin-top: 10px;
     }
 
-    .destiny-title h3{
+    .destiny-title h3 {
         font-size: 15px;
     }
 
@@ -99,10 +100,12 @@
     .destiny-cards .card img {
         height: 450px;
     }
+
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width:1024px) {
+
     .destiny-cards .card {
         max-width: 300px;
     }
@@ -116,7 +119,6 @@
     }
 
     .info-card a:hover {
-    color: rgb(0, 58, 98);
+        color: var(--azul-titulo);
     }
-    
 }

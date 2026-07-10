@@ -1,3 +1,57 @@
+:root {
+    /* FONTES */
+    --fonte-titulo: "Montserrat-ExtraBold", sans-serif;
+    --fonte-texto: "Poppins", sans-serif;
+
+    /* CORES */
+    --cor-branco: #ffffff;
+    --cor-branco-gelo: rgb(255, 247, 247);
+    --cor-destaque-amarelo: #fdca3a;
+
+    --cor-verde-transparente: rgba(104, 180, 150, 0.25);
+    --cor-botao-cinza-transparente: rgba(115, 115, 115, 0.7);
+    --cor-borda-cinza: rgb(189, 189, 189);
+
+    /* CORES DO SITE */
+    --fundo-claro: #f8f9fa;
+    --fundo-amarelo-claro: rgb(248, 234, 206);
+
+    --azul-claro: rgb(0, 185, 216);
+    --azul-titulo: rgb(0, 58, 98);
+
+    --texto-cinza: #666666;
+    --texto-cinza-secundario: rgb(72, 86, 101);
+
+    --cor-icone-azul: oklch(43.916% 0.10875 246.08);
+    --cor-check: oklch(58% .13 150);
+    --cor-whatsapp: oklch(68% .18 145);
+
+    /* SOMBRAS */
+    --sombra-card: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* TAMANHOS DE TEXTO */
+    --tamanho-texto-pequeno: 12px;
+    --tamanho-texto-botao: 14px;
+
+    /* ARREDONDAMENTOS */
+    --borda-arredondada-botao: 32px;
+    --borda-arredondada-card: 24px;
+    --borda-arredondada-localizacao: 20px;
+    --borda-arredondada-imagem-card: 25px;
+
+    /* TRANSIÇÕES */
+    --transicao-padrao: 0.25s ease;
+
+    /* GRADIENTES */
+    --gradiente-azul: linear-gradient(to right, rgb(25, 130, 190), rgb(9, 92, 148));
+
+    /* CORES DO RODAPÉ */
+    --fundo-footer: oklch(35.977% 0.08197 249.872);
+    --texto-footer: rgb(225, 220, 206);
+    --borda-footer: rgba(155, 155, 155, 0.5);
+    --texto-footer-secundario: rgba(255, 255, 255, 0.6);
+}
+
 @font-face {
     font-family: "Montserrat-ExtraBold";
     src: url(../fonts/Montserrat-ExtraBold.ttf);
