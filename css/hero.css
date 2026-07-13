@@ -37,15 +37,14 @@
     margin-right: 10px;
 }
 
-
 /* AREA TEXTO */
 .hero-text {
     color: var(--cor-branco);
 }
 
 .hero-text h1 {
-    font-weight: 800; 
-    font-size: 3rem; 
+    font-weight: 800;
+    font-size: 3rem;
     line-height: 1.1;
     font-family: var(--fonte-titulo);
 }
@@ -61,9 +60,7 @@
 }
 
 /* AREA BOTOES */
-.hero-buttons {
-    margin-top: 30px;
-}
+.hero-buttons { margin-top: 30px; }
 
 .destiny-button {
     display: flex;
@@ -79,9 +76,7 @@
     width: 100%;
     margin-top: 15px;
     border: 1px solid var(--cor-borda-cinza);
-    transition: transform var(--transicao-padrao),
-                box-shadow var(--transicao-padrao),
-                background-color var(--transicao-padrao);
+    transition: transform var(--transicao-padrao), box-shadow var(--transicao-padrao), background-color var(--transicao-padrao);
 }
 
 .hero-buttons a.whatsapp-button {
@@ -126,48 +121,19 @@
     font-size: var(--tamanho-texto-pequeno);
 }
 
-/* MEDIA QUERRYS */
+/* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-    
     .hero {
         background-image: url(../img/background-marajo-tablet.png);
         height: 700px;
     }
-
-    .hero-location {
-        margin-top: 120px;
-    }
-
-    .hero-buttons {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .destiny-button {
-        width: 170px;
-        height: 50px;
-        margin: 0 0 0 15px;
-    }
-    
-    .hero-buttons a.whatsapp-button {
-        width: 320px;
-        height: 50px;
-    }
-
-    .hero-cards {
-        justify-content: flex-start;
-    }
-
-    .hero-cards .card {
-        width: 160px;
-        height: 72px;
-        margin-right: 20px;
-    }
-
-    .hero-text {
-        width: 662px;
-    }
-
+    .hero-location { margin-top: 120px; }
+    .hero-buttons { display: flex; justify-content: flex-start; }
+    .destiny-button { width: 170px; height: 50px; margin: 0 0 0 15px; }
+    .hero-buttons a.whatsapp-button { width: 320px; height: 50px; }
+    .hero-cards { justify-content: flex-start; }
+    .hero-cards .card { width: 160px; height: 72px; margin-right: 20px; }
+    .hero-text { width: 662px; }
 }
 
 @media screen and (min-width: 1024px) {
@@ -175,26 +141,9 @@
         background-image: url(../img/background-marajo-desktop.png);
         height: 800px;
     }
-
-    .hero-text h1 {
-        font-size: 3.5rem;
-    }
-
-    .hero-container {
-        max-width: 1300px;
-        padding: 0 20px;  
-        margin: 0 auto;   
-    }
-
-    .hero-location {
-        margin-top: 120px;
-    }
-
-    .hero-buttons a.whatsapp-button:hover {
-        transform: translateY(-3px);
-    }
-
-    .destiny-button:hover {
-        transform: translateY(-3px);
-    }  
+    .hero-text h1 { font-size: 3.5rem; }
+    .hero-container { max-width: 1300px; padding: 0 20px; margin: 0 auto; }
+    .hero-location { margin-top: 120px; }
+    .hero-buttons a.whatsapp-button:hover { transform: translateY(-3px); }
+    .destiny-button:hover { transform: translateY(-3px); }
 }

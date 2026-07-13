@@ -18,13 +18,8 @@ footer {
     font-size: .875rem;
 }
 
-.footer-container a.logo-container {
-    justify-content: flex-start;
-}
-
-.footer-container .logo-container h3 {
-    color: var(--cor-branco);
-}
+.footer-container a.logo-container { justify-content: flex-start; }
+.footer-container .logo-container h3 { color: var(--cor-branco); }
 
 .footer-container .logo-info p {
     color: var(--texto-footer);
@@ -39,9 +34,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.footer-container #icone-whatzApp {
-    background-color: oklch(55.489% 0.17662 140.501);
-}
+.footer-container #icone-whatzApp { background-color: oklch(55.489% 0.17662 140.501); }
 
 .footer-container .background-icone {
     display: flex;
@@ -91,7 +84,6 @@ footer {
 
 /* MEDIA QUERY */
 @media screen and (min-width: 1024px) {
-
     .footer-container {
         display: flex;
         flex-direction: row;
@@ -99,22 +91,8 @@ footer {
         margin: 0 auto;
         justify-content: space-between;
     }
-
-    .footer-container .logo-info {
-        width: 100%;
-        max-width: 30%;
-    }
-
-    .footer-container .background-icone:hover {
-        background-color: rgba(126, 126, 126, 0.4);
-    }
-
-    .footer-container #icone-whatzApp:hover {
-        background-color: rgba(126, 126, 126, 0.4);
-    }
-
-    .footer-navigation a:hover {
-        color: rgb(251, 200, 57);
-    }
-
+    .footer-container .logo-info { width: 100%; max-width: 30%; }
+    .footer-container .background-icone:hover { background-color: rgba(126, 126, 126, 0.4); }
+    .footer-container #icone-whatzApp:hover { background-color: rgba(126, 126, 126, 0.4); }
+    .footer-navigation a:hover { color: rgb(251, 200, 57); }
 }
