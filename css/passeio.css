@@ -1,4 +1,3 @@
-/* ---------- FUNDOS COMPARTILHADOS ---------- */
 .passeio-back,
 .passeio-header,
 .passeio-quick-info {
@@ -6,7 +5,7 @@
     background-color: var(--cor-branco-gelo);
 }
 
-/* ---------- CONTAINERS (largura/centralização compartilhadas) ---------- */
+/* CONTAINERS (largura/centralização compartilhadas) */
 .passeio-back-container,
 .passeio-header-container,
 .passeio-quick-container,
@@ -16,9 +15,7 @@
     margin: 0 auto;
 }
 
-.passeio-back-container {
-    padding: 22px 20px 0;
-}
+.passeio-back-container { padding: 22px 20px 0; }
 
 .passeio-back-link {
     display: inline-flex;
@@ -29,8 +26,7 @@
     font-size: 15px;
     text-decoration: none;
     padding: 6px 4px;
-    transition: color var(--transicao-padrao),
-                transform var(--transicao-padrao);
+    transition: color var(--transicao-padrao), transform var(--transicao-padrao);
 }
 
 .passeio-back-link svg {
@@ -39,15 +35,10 @@
     transition: transform var(--transicao-padrao);
 }
 
-.passeio-back-link:hover {
-    color: var(--azul-claro);
-}
+.passeio-back-link:hover { color: var(--azul-claro); }
+.passeio-back-link:hover svg { transform: translateX(-4px); }
 
-.passeio-back-link:hover svg {
-    transform: translateX(-4px);
-}
-
-/* ---------- LABEL PADRÃO (usado no cabeçalho e nas seções) ---------- */
+/* LABEL PADRÃO */
 .passeio-label {
     font-size: 14px;
     letter-spacing: 2px;
@@ -56,7 +47,7 @@
     margin-bottom: 12px;
 }
 
-/* ---------- CABEÇALHO DO PASSEIO (TÍTULO) ---------- */
+/* CABEÇALHO DO PASSEIO (TÍTULO) */
 .passeio-header-container {
     display: flex;
     flex-direction: column;
@@ -77,11 +68,9 @@
     line-height: 24px;
 }
 
-.passeio-subtitle {
-    max-width: 720px;
-}
+.passeio-subtitle { max-width: 720px; }
 
-/* ---------- INFORMAÇÕES RÁPIDAS ---------- */
+/* INFORMAÇÕES RÁPIDAS */
 .passeio-quick-container {
     display: flex;
     flex-wrap: wrap;
@@ -98,8 +87,7 @@
     padding: 18px 20px;
     border-radius: var(--borda-arredondada-imagem-card);
     box-shadow: var(--sombra-card);
-    transition: transform var(--transicao-padrao),
-                box-shadow var(--transicao-padrao);
+    transition: transform var(--transicao-padrao), box-shadow var(--transicao-padrao);
 }
 
 .passeio-quick-container .card:hover {
@@ -140,18 +128,10 @@
     line-height: 1.3;
 }
 
-/* ---------- SEÇÕES DE CONTEÚDO ---------- */
-.passeio-section {
-    width: 100%;
-}
-
-.passeio-section:nth-of-type(even) {
-    background-color: var(--cor-branco-gelo);
-}
-
-.passeio-section:nth-of-type(odd) {
-    background-color: var(--fundo-amarelo-claro);
-}
+/* SEÇÕES DE CONTEÚDO */
+.passeio-section { width: 100%; }
+.passeio-section:nth-of-type(even) { background-color: var(--cor-branco-gelo); }
+.passeio-section:nth-of-type(odd) { background-color: var(--fundo-amarelo-claro); }
 
 .passeio-section-container {
     display: flex;
@@ -173,16 +153,12 @@
     line-height: 24px;
 }
 
-.passeio-section-container > p {
-    max-width: 820px;
-}
+.passeio-section-container > p { max-width: 820px; }
 
 /* Sobre o passeio: largura reduzida para melhor leitura */
-.passeio-sobre-text {
-    max-width: 860px;
-}
+.passeio-sobre-text { max-width: 860px; }
 
-/* ---------- GALERIA MODERNA ---------- */
+/* ===== GALERIA ===== */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -208,7 +184,6 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Fundo desfocado usando a própria imagem */
 .galeria-main-bg {
     position: absolute;
     inset: 0;
@@ -220,9 +195,7 @@
     transition: opacity 0.35s ease;
 }
 
-.galeria-main.has-image .galeria-main-bg {
-    opacity: 1;
-}
+.galeria-main.has-image .galeria-main-bg { opacity: 1; }
 
 .galeria-main-img {
     position: relative;
@@ -233,13 +206,8 @@
     object-position: center;
 }
 
-.galeria-main.is-landscape .galeria-main-img {
-    object-fit: cover;
-}
-
-.galeria-main.is-portrait .galeria-main-img {
-    object-fit: contain;
-}
+.galeria-main.is-landscape .galeria-main-img { object-fit: cover; }
+.galeria-main.is-portrait .galeria-main-img { object-fit: contain; }
 
 .galeria-placeholder {
     position: relative;
@@ -259,12 +227,13 @@
     justify-content: center;
     aspect-ratio: 4 / 3;
     height: auto;
-    padding: 8px;
+    padding: 0;
     border: 3px solid transparent;
-    border-radius: 16px;
-    background-color: var(--fundo-footer);
+    border-radius: 12px;
+    background-color: var(--cor-branco);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: var(--texto-footer);
     font-family: var(--fonte-texto);
     font-size: var(--tamanho-texto-pequeno);
@@ -272,23 +241,13 @@
     cursor: pointer;
     overflow: hidden;
     opacity: 0.75;
-    transition:
-        opacity var(--transicao-padrao),
-        transform var(--transicao-padrao),
-        border-color var(--transicao-padrao);
+    transition: opacity var(--transicao-padrao), transform var(--transicao-padrao), border-color var(--transicao-padrao);
 }
 
-.galeria-thumb:hover {
-    opacity: 1;
-    transform: translateY(-3px);
-}
+.galeria-thumb:hover { opacity: 1; transform: translateY(-3px); }
+.galeria-thumb.active { opacity: 1; border-color: var(--azul-claro); }
 
-.galeria-thumb.active {
-    opacity: 1;
-    border-color: var(--azul-claro);
-}
-
-/* ---------- ROTEIRO ---------- */
+/* ===== ROTEIRO ===== */
 .roteiro-blocks {
     display: flex;
     flex-direction: column;
@@ -306,8 +265,7 @@
     border-radius: var(--borda-arredondada-imagem-card);
     border-left: 6px solid var(--azul-claro);
     box-shadow: var(--sombra-card);
-    transition: transform var(--transicao-padrao),
-                box-shadow var(--transicao-padrao);
+    transition: transform var(--transicao-padrao), box-shadow var(--transicao-padrao);
 }
 
 .roteiro-block:hover {
@@ -336,7 +294,7 @@
     margin-bottom: 10px;
 }
 
-/* ---------- INCLUSO / NÃO INCLUSO ---------- */
+/* ===== INCLUSO / NÃO INCLUSO ===== */
 .passeio-list {
     display: flex;
     flex-direction: column;
@@ -346,9 +304,7 @@
 }
 
 .passeio-list-item,
-.info-important-card {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
+.info-important-card { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); }
 
 .passeio-list-item {
     display: flex;
@@ -372,20 +328,15 @@
     color: var(--cor-branco);
 }
 
-.passeio-list-item.included .marker {
-    background-color: oklch(58% .13 150);
-}
-
-.passeio-list-item.not-included .marker {
-    background-color: rgb(115, 115, 115);
-}
+.passeio-list-item.included .marker { background-color: oklch(58% .13 150); }
+.passeio-list-item.not-included .marker { background-color: rgb(115, 115, 115); }
 
 .passeio-list-item p {
     color: var(--texto-cinza-secundario);
     line-height: 1.3;
 }
 
-/* ---------- INFORMAÇÕES IMPORTANTES ---------- */
+/* ===== INFORMAÇÕES IMPORTANTES ===== */
 .info-important-grid {
     display: flex;
     flex-direction: column;
@@ -412,7 +363,7 @@
     line-height: 22px;
 }
 
-/* ---------- CARD DE PREÇO ---------- */
+/* ===== CARD DE PREÇO ===== */
 .passeio-price {
     width: 100%;
     background: linear-gradient(to right, rgb(25, 130, 190), rgb(9, 92, 148));
@@ -479,7 +430,7 @@
     margin-bottom: 8px;
 }
 
-/* Botões de ação do card de preço (Reservar + Voltar aos roteiros) */
+/* Botões de ação do card de preço */
 .passeio-price-card .price-buttons {
     display: flex;
     flex-direction: column;
@@ -500,9 +451,7 @@
     font-size: 19px;
     height: 68px;
     width: 100%;
-    transition: transform var(--transicao-padrao),
-                box-shadow var(--transicao-padrao),
-                background-color var(--transicao-padrao);
+    transition: transform var(--transicao-padrao), box-shadow var(--transicao-padrao), background-color var(--transicao-padrao);
 }
 
 .passeio-price-card a.whatsapp-button {
@@ -523,7 +472,6 @@
     margin-right: 10px;
 }
 
-/* Botão secundário: fundo branco, borda azul, seta para a esquerda */
 .passeio-price-card a.secondary-button {
     background-color: var(--cor-branco);
     color: var(--azul-titulo);
@@ -538,39 +486,17 @@
     transition: transform var(--transicao-padrao);
 }
 
-.passeio-price-card a.secondary-button:hover {
-    transform: translateY(-3px);
-}
+.passeio-price-card a.secondary-button:hover { transform: translateY(-3px); }
+.passeio-price-card a.secondary-button:hover svg { transform: translateX(-4px); }
 
-.passeio-price-card a.secondary-button:hover svg {
-    transform: translateX(-4px);
-}
-
-/* ---------- MEDIA QUERY ---------- */
+/* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-    .passeio-header-container {
-        padding: 60px 20px 30px;
-    }
-    .passeio-header-container h1 {
-        font-size: 2.4rem;
-    }
-    .passeio-section-container h2 {
-        font-size: 2rem;
-    }
-    .passeio-quick-container .card {
-        flex: 1;
-        min-width: 170px;
-        align-items: center;
-    }
-    .galeria {
-        flex-direction: row;
-        align-items: stretch;
-        gap: 18px;
-    }
-    .galeria-main {
-        flex: 1 1 66%;
-        height: 520px;
-    }
+    .passeio-header-container { padding: 60px 20px 30px; }
+    .passeio-header-container h1 { font-size: 2.4rem; }
+    .passeio-section-container h2 { font-size: 2rem; }
+    .passeio-quick-container .card { flex: 1; min-width: 170px; align-items: center; }
+    .galeria { flex-direction: row; align-items: stretch; gap: 18px; }
+    .galeria-main { flex: 1 1 66%; height: 520px; }
     .galeria-thumbs {
         flex: 1 1 34%;
         grid-template-columns: repeat(2, 1fr);
@@ -578,27 +504,22 @@
         align-content: start;
         gap: 14px;
     }
-    .galeria-thumb {
-        aspect-ratio: 4 / 3;
-        font-size: 13px;
-    }
-    .roteiro-block {
-        padding: 30px;
-    }
-    .passeio-price-card .price-buttons {
-        flex-direction: row;
-        max-width: 640px;
-    }
+    .galeria-thumb { aspect-ratio: 3 / 4; font-size: 13px; }
+    .roteiro-block { padding: 30px; }
+    .passeio-price-card .price-buttons { flex-direction: row; max-width: 640px; }
 }
 
 @media screen and (min-width: 1024px) {
-    .passeio-header-container h1 {
-        font-size: 2.8rem;
-    }
-    .passeio-section-container h2 {
-        font-size: 2.2rem;
-    }
-    .galeria-main {
+    .passeio-header-container h1 { font-size: 2.8rem; }
+    .passeio-section-container h2 { font-size: 2.2rem; }
+    .galeria-main { height: 560px; flex: 1 1 66%; }
+    .galeria-thumbs {
+        flex: 1 1 34%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 14px;
+        align-content: stretch;
         height: 560px;
     }
+    .galeria-thumb { aspect-ratio: auto; width: 100%; height: 100%; font-size: 13px; border-radius: 12px; }
 }

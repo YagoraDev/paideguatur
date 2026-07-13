@@ -13,9 +13,7 @@
 }
 
 #paidegua-tablet,
-#paidegua-desktop {
-    display: none;
-}
+#paidegua-desktop { display: none; }
 
 .about-logo-paidegua {
     width: 100%;
@@ -113,41 +111,18 @@
 
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-
     #paidegua-mobile,
-    #paidegua-desktop {
-        display: none;
-    }
-
-    #paidegua-tablet {
-        display: block;
-    }
-
-    .about-logo-paidegua {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .about-info h3 {
-        font-size: 15px;
-    }
-
-    .about-info h2 {
-        font-size: 2rem;
-    }
+    #paidegua-desktop { display: none; }
+    #paidegua-tablet { display: block; }
+    .about-logo-paidegua { width: 100%; padding: 20px; }
+    .about-info h3 { font-size: 15px; }
+    .about-info h2 { font-size: 2rem; }
 }
 
 @media screen and (min-width: 1024px) {
-
     #paidegua-tablet,
-    #paidegua-mobile {
-        display: none;
-    }
-
-    #paidegua-desktop {
-        display: block;
-    }
-
+    #paidegua-mobile { display: none; }
+    #paidegua-desktop { display: block; }
     .about-container {
         display: flex;
         flex-direction: row;
@@ -155,20 +130,17 @@
         margin: 0 auto;
         gap: 60px;
     }
-
     .about-logo-paidegua {
         width: 40%;
         flex-shrink: 0;
         padding: 0 0 0 20px;
     }
-
     .about-logo-paidegua img {
         width: 100%;
         height: auto;
         border-radius: var(--borda-arredondada-localizacao);
         object-fit: cover;
     }
-
     .about-details {
         width: 60%;
         display: flex;
@@ -176,23 +148,8 @@
         align-items: flex-start;
         padding: 0 20px 0 0;
     }
-
-    .about-info {
-        padding: 0;
-        margin-top: 0;
-    }
-
-    .about-checked {
-        padding: 0;
-        margin-top: 20px;
-    }
-
-    .about-container a.whatsapp-button {
-        margin: 20px 0 0;
-        align-self: flex-start;
-    }
-
-    .about-info h2 {
-        font-size: 2rem;
-    }
+    .about-info { padding: 0; margin-top: 0; }
+    .about-checked { padding: 0; margin-top: 20px; }
+    .about-container a.whatsapp-button { margin: 20px 0 0; align-self: flex-start; }
+    .about-info h2 { font-size: 2rem; }
 }

@@ -5,10 +5,8 @@
 
 .destiny-container {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     max-width: 1300px;
+    margin: 0 auto;
     padding: 90px 20px;
 }
 
@@ -33,92 +31,105 @@
 }
 
 .destiny-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    justify-content: center;
     margin-top: 40px;
 }
 
 .destiny-cards .card {
     display: flex;
     flex-direction: column;
-    max-width: 380px;
-    height: auto;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.destiny-cards .card:hover {
+    transform: translateY(-5px);
 }
 
 .destiny-cards .card img {
     display: block;
     width: 100%;
-    height: 470px;
+    height: 380px;
     object-fit: cover;
     border-radius: var(--borda-arredondada-imagem-card) var(--borda-arredondada-imagem-card) 0 0;
 }
 
 .info-card {
-    padding: 20px;
+    padding: 16px 18px 18px;
     border-radius: 0 0 var(--borda-arredondada-imagem-card) var(--borda-arredondada-imagem-card);
     background-color: var(--cor-branco);
     box-shadow: var(--sombra-card);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-card h3 {
     color: var(--azul-titulo);
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--fonte-texto);
 }
 
 .info-card p {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 8px 0 16px;
     color: var(--texto-cinza);
+    font-size: 14px;
+    line-height: 1.4;
+    flex: 1;
 }
 
 .info-card a {
     color: var(--azul-claro);
-    cursor: pointer;
     text-decoration: none;
     font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-
-@media screen and (min-width:768px) {
-
-    .destiny-title h2 {
-        font-size: 2rem;
-        margin-top: 10px;
-    }
-
-    .destiny-title h3 {
-        font-size: 15px;
-    }
-
-    .destiny-cards .card {
-        max-width: 370px;
-    }
-
-    .destiny-cards .card img {
-        height: 450px;
-    }
-
+.info-card a:hover {
+    color: var(--azul-titulo);
 }
 
-
-@media screen and (min-width:1024px) {
-
-    .destiny-cards .card {
-        max-width: 300px;
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+    .destiny-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
+    .destiny-cards .card img { height: 380px; }
+    .destiny-title h2 { font-size: 2rem; margin-top: 10px; }
+    .destiny-title h3 { font-size: 15px; }
+    .info-card { padding: 18px 20px 20px; }
+    .info-card h3 { font-size: 17px; }
+    .info-card p { font-size: 14px; margin: 10px 0 18px; }
+    .info-card a { font-size: 14px; }
+}
 
-    .destiny-cards .card img {
-        height: 370px;
+@media screen and (max-width: 768px) {
+    .destiny-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
+    .destiny-cards .card img { height: 300px; }
+    .destiny-title h2 { font-size: 1.5rem; }
+    .info-card { padding: 14px 16px 16px; }
+    .info-card h3 { font-size: 15px; }
+    .info-card p { font-size: 13px; margin: 8px 0 14px; }
+    .info-card a { font-size: 13px; }
+}
 
-    .destiny-title h2 {
-        font-size: 2.2rem;
+@media screen and (max-width: 480px) {
+    .destiny-cards {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 40px auto 0;
     }
-
-    .info-card a:hover {
-        color: var(--azul-titulo);
-    }
+    .destiny-cards .card img { height: 320px; }
+    .destiny-title h2 { font-size: 1.3rem; }
+    .info-card { padding: 16px 18px 18px; }
+    .info-card h3 { font-size: 16px; }
+    .info-card p { font-size: 14px; margin: 10px 0 16px; }
+    .info-card a { font-size: 14px; }
 }

@@ -44,21 +44,10 @@
 
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-
-    .container-get-in-touch h2 {
-        font-size: 2rem;
-    }
-
+    .container-get-in-touch h2 { font-size: 2rem; }
 }
 
 @media screen and (min-width: 1024px) {
-
-    .container-get-in-touch h2 {
-        font-size: 3rem;
-    }
-
-    .container-get-in-touch p {
-        font-size: 18px;
-    }
-
+    .container-get-in-touch h2 { font-size: 3rem; }
+    .container-get-in-touch p { font-size: 18px; }
 }

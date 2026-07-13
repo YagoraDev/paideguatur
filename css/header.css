@@ -12,13 +12,12 @@ header {
 
 .header-container {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    max-width: 1300px;  
-    padding: 10px 20px;  
+    max-width: 1300px;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .logo-container {
@@ -41,9 +40,7 @@ header {
     position: static;
 }
 
-#menu {
-    display: none;
-}
+#menu { display: none; }
 
 .menu-icon {
     cursor: pointer;
@@ -56,9 +53,7 @@ header {
     height: 40px;
 }
 
-nav {
-    display: none;
-}
+nav { display: none; }
 
 #menu:checked ~ nav {
     display: block;
@@ -76,9 +71,7 @@ nav {
     padding: 0 20px;
 }
 
-.list-links li {
-    margin: 15px 0;
-}
+.list-links li { margin: 15px 0; }
 
 .list-links li a {
     color: black;
@@ -107,9 +100,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    transition: transform 0.25s ease,
-                box-shadow 0.25s ease,
-                background-color 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
 .whatsapp-button img {
@@ -117,125 +108,33 @@ nav {
     margin-right: 5px;
 }
 
-.whatsapp-desktop .whatsapp-button {
-    display: none;
-}
+.whatsapp-desktop .whatsapp-button { display: none; }
 
+body { padding-top: 84px; }
+
+/* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-    .list-links li a{
-        font-size: 18px;
-    }
-
-    .whatsapp-container a.whatsapp-button {
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .whatsapp-button img {
-        width: 25px;
-        height: 25px;
-    }
+    .list-links li a { font-size: 18px; }
+    .whatsapp-container a.whatsapp-button { height: 40px; font-size: 14px; }
+    .whatsapp-button img { width: 25px; height: 25px; }
 }
 
 @media screen and (min-width: 1024px) {
-    header {
-        height: 64px;
-    }
-    
-    .header-container {
-        display: flex;
-        flex-direction: row;
-        max-width: 1300px;
-        padding: 10px 20px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo-container h3 {
-        font-size: 16px;
-    }
-
-    .navigation-menu {
-        margin-top: 0;
-        flex: 1;
-        justify-content: center;
-    }
-    
-    .navigation-menu label {
-        display: none;
-    }
-    
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-    }
-    
-    .navigation-menu ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 2px;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .whatsapp-container {
-        padding: 0;
-        margin: auto 0;
-        width: 220px;
-        flex-shrink: 0;
-    }
-
-    .whatsapp-container a.whatsapp-button {
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .whatsapp-button img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .whatsapp-button {
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    .whatsapp-button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-    
-    .list-links li a {
-        font-size: 14px;
-        font-weight: 500;
-        padding: 10px 15px;
-        color: #222;
-    }
-
-    .list-links li a:hover {
-        color: #000000;
-    }
-    
-    .list-links {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .list-links li {
-        margin: 0;
-    }
-}
-
-body {
-    padding-top: 84px;
-}
-
-@media screen and (min-width: 1024px) {
-    body {
-        padding-top: 64px;
-    }
+    header { height: 64px; }
+    .header-container { padding: 10px 20px; }
+    .logo-container h3 { font-size: 16px; }
+    .navigation-menu { margin-top: 0; flex: 1; justify-content: center; }
+    .navigation-menu label { display: none; }
+    nav { display: flex; align-items: center; justify-content: center; flex: 1; }
+    .navigation-menu ul { display: flex; flex-direction: row; justify-content: center; gap: 2px; margin: 0; padding: 0; }
+    .whatsapp-container { padding: 0; margin: auto 0; width: 220px; flex-shrink: 0; }
+    .whatsapp-container a.whatsapp-button { height: 35px; font-size: 14px; }
+    .whatsapp-button { font-size: 16px; font-weight: bold; }
+    .whatsapp-button:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+    .whatsapp-button img { width: 25px; height: 25px; }
+    .list-links li a { font-size: 14px; font-weight: 500; padding: 10px 15px; color: #222; }
+    .list-links li a:hover { color: #000000; }
+    .list-links { padding: 0; display: flex; justify-content: center; }
+    .list-links li { margin: 0; }
+    body { padding-top: 64px; }
 }
