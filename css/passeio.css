@@ -5,7 +5,7 @@
     background-color: var(--cor-branco-gelo);
 }
 
-/* CONTAINERS (largura/centralização compartilhadas) */
+/* CONTAINERS */
 .passeio-back-container,
 .passeio-header-container,
 .passeio-quick-container,
@@ -38,7 +38,6 @@
 .passeio-back-link:hover { color: var(--azul-claro); }
 .passeio-back-link:hover svg { transform: translateX(-4px); }
 
-/* LABEL PADRÃO */
 .passeio-label {
     font-size: 14px;
     letter-spacing: 2px;
@@ -47,7 +46,7 @@
     margin-bottom: 12px;
 }
 
-/* CABEÇALHO DO PASSEIO (TÍTULO) */
+/* CABEÇALHO DO PASSEIO */
 .passeio-header-container {
     display: flex;
     flex-direction: column;
@@ -155,10 +154,9 @@
 
 .passeio-section-container > p { max-width: 820px; }
 
-/* Sobre o passeio: largura reduzida para melhor leitura */
 .passeio-sobre-text { max-width: 860px; }
 
-/* ===== GALERIA ===== */
+/*  GALERIA  */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -247,7 +245,7 @@
 .galeria-thumb:hover { opacity: 1; transform: translateY(-3px); }
 .galeria-thumb.active { opacity: 1; border-color: var(--azul-claro); }
 
-/* ===== ROTEIRO ===== */
+/*  ROTEIRO  */
 .roteiro-blocks {
     display: flex;
     flex-direction: column;
@@ -294,7 +292,7 @@
     margin-bottom: 10px;
 }
 
-/* ===== INCLUSO / NÃO INCLUSO ===== */
+/*  INCLUSO / NÃO INCLUSO  */
 .passeio-list {
     display: flex;
     flex-direction: column;
