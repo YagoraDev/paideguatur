@@ -31,7 +31,7 @@ footer {
 .footer-container .social-midia {
     display: flex;
     gap: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .footer-container #icone-whatzApp { background-color: oklch(55.489% 0.17662 140.501); }
@@ -80,6 +80,22 @@ footer {
     font-size: .875rem;
     width: 100%;
     border-top: 1px solid var(--borda-footer);
+}
+
+.footer-credits-link {
+    margin-top: 12px;
+}
+
+.footer-credits-link a {
+    color: var(--texto-footer);
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-credits-link a:hover {
+    color: var(--azul-claro);
+    text-decoration: underline;
 }
 
 /* MEDIA QUERY */
