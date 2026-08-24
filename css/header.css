@@ -4,18 +4,20 @@ header {
     height: 84px;
     justify-content: center;
     background-color: #fdca3a;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header-container {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    max-width: 1300px;  
-    padding: 10px 20px;  
+    max-width: 1300px;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .logo-container {
@@ -28,26 +30,17 @@ header {
 
 .logo-container h3 {
     color: black;
-    font-size: 14px;
-    font-family: "Archivo-Black";
+    font-size: 18px;
+    font-family: "Montserrat-ExtraBold";
 }
 
-.logo-container img {
-    width: 60px;
-    height: 60px;
-}
-
-/* AREA MENU */
 .navigation-menu {
     display: flex;
     align-items: center;
     position: static;
 }
 
-/* ESCONDER O CHECKBOX*/
-#menu {
-    display: none;
-}
+#menu { display: none; }
 
 .menu-icon {
     cursor: pointer;
@@ -60,12 +53,8 @@ header {
     height: 40px;
 }
 
-/* MENU FECHADO POR PADRÃO*/
-nav {
-    display: none;
-}
+nav { display: none; }
 
-/* QUANDO O CHECKBOX ESTÁ MARCADO, O MENU APARECE */
 #menu:checked ~ nav {
     display: block;
     position: absolute;
@@ -74,7 +63,6 @@ nav {
     width: 100%;
     background-color: #fdca3a;
     z-index: 100;
-    padding: 20px 0;
 }
 
 .list-links {
@@ -83,20 +71,17 @@ nav {
     padding: 0 20px;
 }
 
-.list-links li {
-    margin: 15px 0;
-}
+.list-links li { margin: 15px 0; }
 
 .list-links li a {
     color: black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     display: block;
     padding: 10px 0;
 }
 
-/* AREA WHATSAPP */
 .whatsapp-container {
     box-sizing: border-box;
     padding: 20px;
@@ -105,132 +90,90 @@ nav {
 
 .whatsapp-button {
     display: flex;
-    background-color: #25D366;
+    background-color: oklch(68% .18 145);
     color: white;
     text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 24px;
+    padding: 14px 28px;
+    border-radius: 32px;
     font-weight: bold;
     font-size: 18px;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     width: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .whatsapp-button img {
     display: block;
-    margin-right: 5px;
+    width: 28px;
+    height: 28px;
 }
 
-.whatsapp-desktop .whatsapp-button {
-    display: none;
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* MEDIA QUERRY */
+.whatsapp-desktop .whatsapp-button { display: none; }
+
+body { padding-top: 84px; }
+
+/* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-    .list-links li a{
-        font-size: 18px;
+    .list-links li a { font-size: 18px; }
+    .whatsapp-container a.whatsapp-button { 
+        height: 48px; 
+        font-size: 16px; 
+        padding: 12px 24px;
     }
-
-    .whatsapp-container a.whatsapp-button {
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .whatsapp-button img {
-        width: 25px;
-        height: 25px;
+    .whatsapp-button img { 
+        width: 24px; 
+        height: 24px; 
     }
 }
 
-@media screen and (min-width: 1024px) {
-    header {
-        height: 64px;
+@media screen and (min-width: 1250px) {
+    header { height: 84px; }
+    .header-container { padding: 10px 20px; }
+    .logo-container h3 { font-size: 18px; }
+    .navigation-menu { margin-top: 0; flex: 1; justify-content: center; }
+    .navigation-menu label { display: none; }
+    nav { display: flex; align-items: center; justify-content: center; flex: 1; }
+    .navigation-menu ul { display: flex; flex-direction: row; justify-content: center; gap: 2px; margin: 0; padding: 0; }
+    .whatsapp-container { 
+        padding: 0; 
+        margin: auto 0; 
+        width: auto; 
+        flex-shrink: 0; 
     }
-    
-    .header-container {
-        display: flex;
-        flex-direction: row;
-        max-width: 1300px;
-        padding: 10px 20px;
-        justify-content: space-between;
-        align-items: center;
+    .whatsapp-container a.whatsapp-button { 
+        height: 48px; 
+        font-size: 16px; 
+        padding: 12px 28px;
+        gap: 10px;
+        width: auto;
     }
-
-    .logo-container h3 {
-        font-size: 16px;
+    .whatsapp-button { 
+        font-size: 18px; 
+        font-weight: bold; 
     }
-
-    .navigation-menu {
-        margin-top: 0;
-        flex: 1;
-        justify-content: center;
+    .whatsapp-button:hover { 
+        transform: translateY(-3px); 
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
     }
-    
-    .navigation-menu label {
-        display: none;
+    .whatsapp-button img { 
+        width: 24px; 
+        height: 24px; 
     }
-    
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
+    .list-links li a { 
+        font-size: 16px; 
+        font-weight: 600; 
+        padding: 10px 15px; 
+        color: #222; 
     }
-    
-    .navigation-menu ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 2px;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .whatsapp-container {
-        padding: 0;
-        margin: auto 0;
-        width: 220px;
-        flex-shrink: 0;
-    }
-
-    .whatsapp-container a.whatsapp-button {
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .whatsapp-button img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .whatsapp-button {
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    .whatsapp-button:hover {
-        background-color: #128C7E;
-}
-    
-    .list-links li a {
-        font-size: 14px;
-        font-weight: 500;
-        padding: 10px 15px;
-        color: #222;
-    }
-
-    .list-links li a:hover {
-        color: #128C7E;
-    }
-    
-    .list-links {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .list-links li {
-        margin: 0;
-    }
+    .list-links li a:hover { color: #000000; }
+    .list-links { padding: 0; display: flex; justify-content: center; }
+    .list-links li { margin: 0; }
+    body { padding-top: 84px; }
 }

@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/passeio.css" />
+  <title>PaideguaViagens</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-container">
+        <img src="img/icons/logo.png" alt="Imagem da logo" />
+        <h3>PAIDEGUATUR</h3>
+      </a>
+
+      <div class="navigation-menu">
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="menu-icon">
+          <img src="img/icons/menu.png" alt="Icone do menu" />
+        </label>
+
+        <nav>
+          <ul class="list-links">
+            <li><a href="#destino">Destino</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#roteiro">Roteiro</a></li>
+            <li><a href="#incluso">Incluso</a></li>
+            <li><a href="#nao-incluso">Não incluso</a></li>
+            <li><a href="#atencao">Atenção</a></li>
+            <li><a href="#preco">Preço</a></li>
+          </ul>
+          <!-- WHATSAPP MOBILE - DENTRO DA NAV -->
+          <div class="whatsapp-container">
+            <a class="whatsapp-button" href="https://wa.me/559188488129?text=Olá! Gostaria de saber mais informações sobre os passeios." target="_blank"><img src="img/icons/whatsapp-logo.png"
+                alt="Imagem da logo whatsApp" />Falar
+              no WhatsApp</a>
+          </div>
+        </nav>
+
+        <!-- WHATSAPP DESKTOP - FORA DA NAV -->
+        <div class="whatsapp-desktop">
+          <a class="whatsapp-button" href="https://wa.me/559188488129?text=Olá! Gostaria de saber mais informações sobre os passeios." target="_blank"><img src="img/icons/whatsapp-logo.png"
+              alt="Imagem da logo whatsApp" />Falar no
+            WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- VOLTAR -->
+    <div class="passeio-back">
+      <div class="passeio-back-container">
+        <a href="index.html#destinos" class="passeio-back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5"></path>
+            <path d="m12 19-7-7 7-7"></path>
+          </svg>
+          Voltar para os passeios
+        </a>
+      </div>
+    </div>
+
+    <!-- TÍTULO DO PASSEIO -->
+    <section class="passeio-header">
+      <div class="passeio-header-container">
+        <p class="passeio-label">Destino</p>
+        <h1>City Tour Belém</h1>
+        <p class="passeio-subtitle">Belém, a capital paraense</p>
+      </div>
+    </section>
+
+    <!-- INFORMAÇÕES RÁPIDAS -->
+    <section class="passeio-quick-info">
+      <div class="passeio-quick-container">
+        <div class="card">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3 2"></path>
+            </svg>
+          </span>
+          <div class="card-text">
+            <h4>Saída</h4>
+            <p>Terça a Sábado · 09h ou 15h</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path>
+              <path d="m9.5 10 2 2 3-3"></path>
+            </svg>
+          </span>
+          <div class="card-text">
+            <h4>Duração</h4>
+            <p>3 horas</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 16h18l-1.5 4a2 2 0 0 1-1.9 1.4H6.4A2 2 0 0 1 4.5 20L3 16Z"></path>
+              <path d="M6 16V8l6-3 6 3v8"></path>
+            </svg>
+          </span>
+          <div class="card-text">
+            <h4>Transporte</h4>
+            <p>Van com ar-condicionado</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="8" r="3"></circle>
+              <path d="M3 20a6 6 0 0 1 12 0"></path>
+              <path d="M16 6.5a3 3 0 0 1 0 5.5"></path>
+              <path d="M18 14a6 6 0 0 1 3 6"></path>
+            </svg>
+          </span>
+          <div class="card-text">
+            <h4>Grupo mínimo</h4>
+            <p>2 pessoas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="passeio-section">
+      <div class="passeio-section-container">
+        <h3 class="passeio-label">Galeria</h3>
+        <h2>Galeria de imagens</h2>
+        <div class="galeria">
+          <figure class="galeria-main" id="galeriaMain">
+            <div class="galeria-main-bg" id="galeriaMainBg" aria-hidden="true"></div>
+            <img class="galeria-main-img" id="galeriaMainImg" src="" alt="" hidden />
+            <span class="galeria-placeholder" id="galeriaPlaceholder">Clique em uma imagem</span>
+          </figure>
+          <div class="galeria-thumbs">
+            <button type="button" class="galeria-thumb active" data-src="img/passeios/06_belem/01-BELEM.webp" data-label="Ver-o-Peso">Ver-o-Peso</button>
+            <button type="button" class="galeria-thumb" data-src="img/passeios/06_belem/02-BELEM.webp" data-label="Mangal das Garças">Mangal das Garças</button>
+            <button type="button" class="galeria-thumb" data-src="img/passeios/06_belem/03-BELEM.webp" data-label="Mangal das Garças">Mangal das Garças</button>
+            <button type="button" class="galeria-thumb" data-src="img/passeios/06_belem/04-BELEM.webp" data-label=""></button>
+            <button type="button" class="galeria-thumb" data-src="img/passeios/06_belem/05-BELEM.webp" data-label="Museu Emílio Goeldi">Museu Emílio Goeldi</button>
+            <button type="button" class="galeria-thumb" data-src="img/passeios/06_belem/06-BELEM.jpeg" data-label="Museu Emílio Goeldi">Museu Emílio Goeldi</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O PASSEIO -->
+    <section id="sobre" class="passeio-section">
+      <div class="passeio-section-container">
+        <h3 class="passeio-label">Sobre</h3>
+        <h2>Sobre o passeio</h2>
+        <p class="passeio-sobre-text">City Tour completo por Belém com visita aos principais pontos turísticos da cidade. Em 3 horas, conheça a história, a cultura e a arquitetura da capital paraense, com paradas no Ver-o-Peso, Complexo Feliz Lusitânia, Mangal das Garças, Pólo Joalheiro, Basílica de Nazaré e Museu Emílio Goeldi (visita panorâmica).</p>
+      </div>
+    </section>
+
+    <!-- ROTEIRO -->
+    <section id="roteiro" class="passeio-section">
+      <div class="passeio-section-container">
+        <h3 class="passeio-label">Roteiro</h3>
+        <h2>Cronograma do passeio</h2>
+        <div class="roteiro-blocks">
+          <article class="roteiro-block">
+            <span class="roteiro-day">Parada 1</span>
+            <div class="roteiro-content">
+              <h3>Ver-o-Peso</h3>
+              <p>Visita ao famoso mercado municipal, cartão-postal de Belém e um dos maiores mercados públicos do Brasil. Conheça a diversidade de peixes, ervas, artesanato e a cultura ribeirinha da Amazônia.</p>
+            </div>
+          </article>
+          <article class="roteiro-block">
+            <span class="roteiro-day">Parada 2</span>
+            <div class="roteiro-content">
+              <h3>Complexo Feliz Lusitânia</h3>
+              <p>Visita panorâmica ao conjunto arquitetônico que reúne a Catedral da Sé, o Forte do Presépio, a Igreja de Santo Alexandre e a Casa das Onze Janelas, berço da fundação da cidade.</p>
+            </div>
+          </article>
+          <article class="roteiro-block">
+            <span class="roteiro-day">Parada 3</span>
+            <div class="roteiro-content">
+              <h3>Mangal das Garças</h3>
+              <p>Passeio pelo parque ecológico que abriga espécies da fauna e flora amazônica, com destaque para as garças, o borboletário e o mirante com vista panorâmica da cidade.</p>
+            </div>
+          </article>
+          <article class="roteiro-block">
+            <span class="roteiro-day">Parada 4</span>
+            <div class="roteiro-content">
+              <h3>Pólo Joalheiro</h3>
+              <p>Visita ao centro de artesanato em pedras e gemas da Amazônia, onde é possível conhecer o trabalho dos ourives paraenses e adquirir peças exclusivas.</p>
+            </div>
+          </article>
+          <article class="roteiro-block">
+            <span class="roteiro-day">Parada 5</span>
+            <div class="roteiro-content">
+              <h3>Basílica de Nazaré</h3>
+              <p>Visita à imponente igreja dedicada a Nossa Senhora de Nazaré, padroeira dos paraenses. Conheça a arquitetura neoclássica e os vitrais que contam a história da fé na região.</p>
+            </div>
+          </article>
+          <article class="roteiro-block">
+            <span class="roteiro-day">Parada 6</span>
+            <div class="roteiro-content">
+              <h3>Museu Emílio Goeldi</h3>
+              <p>Visita panorâmica ao Museu Paraense Emílio Goeldi, uma das mais importantes instituições de pesquisa da Amazônia, com destaque para a fauna, flora e o famoso Parque Zoobotânico.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE ESTÁ INCLUSO -->
+    <section id="incluso" class="passeio-section">
+      <div class="passeio-section-container">
+        <h3 class="passeio-label">Incluso</h3>
+        <h2>O que está incluso</h2>
+        <div class="passeio-list">
+          <div class="passeio-list-item included">
+            <span class="marker">✓</span>
+            <p>Transporte em van com ar-condicionado</p>
+          </div>
+          <div class="passeio-list-item included">
+            <span class="marker">✓</span>
+            <p>Guia de turismo credenciado</p>
+          </div>
+          <div class="passeio-list-item included">
+            <span class="marker">✓</span>
+            <p>Visita aos pontos turísticos descritos no roteiro</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE NÃO ESTÁ INCLUSO -->
+    <section id="nao-incluso" class="passeio-section">
+      <div class="passeio-section-container">
+        <h3 class="passeio-label">Não incluso</h3>
+        <h2>O que não está incluso</h2>
+        <div class="passeio-list">
+          <div class="passeio-list-item not-included">
+            <span class="marker">✕</span>
+            <p>Alimentação e bebidas</p>
+          </div>
+          <div class="passeio-list-item not-included">
+            <span class="marker">✕</span>
+            <p>Ingressos para atrações com cobrança adicional</p>
+          </div>
+          <div class="passeio-list-item not-included">
+            <span class="marker">✕</span>
+            <p>Compras pessoais</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMAÇÕES IMPORTANTES -->
+    <section id="atencao" class="passeio-section">
+      <div class="passeio-section-container">
+        <h3 class="passeio-label">Atenção</h3>
+        <h2>Informações importantes</h2>
+        <div class="info-important-grid">
+          <article class="info-important-card">
+            <h3>Dias e horários</h3>
+            <p>Saídas de terça a sexta às 09h e 15h; aos sábados às 09h.</p>
+          </article>
+          <article class="info-important-card">
+            <h3>Duração</h3>
+            <p>O passeio tem duração aproximada de 3 horas.</p>
+          </article>
+          <article class="info-important-card">
+            <h3>Confirmação</h3>
+            <p>Confirmação a partir de 2 pessoas.</p>
+          </article>
+          <article class="info-important-card">
+            <h3>Forma de pagamento</h3>
+            <p>Dinheiro, cartão de crédito ou débito, ou via Pix.</p>
+          </article>
+          <article class="info-important-card">
+            <h3>Cancelamento</h3>
+            <p>Reembolso total com 48h de antecedência; fora do prazo, reembolso de 80% do valor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD DE PREÇO -->
+    <section id="preco" class="passeio-price">
+      <div class="passeio-price-container">
+        <div class="passeio-price-card">
+          <h2 class="price-title">Gostou deste passeio?</h2>
+          <p class="price-subtitle">Reserve agora mesmo pelo WhatsApp e garanta sua vaga com nossa equipe.</p>
+          <div class="price-highlight">
+            <p class="price-label">Valor por pessoa</p>
+            <p class="price-value">R$ 250,00</p>
+          </div>
+          <div class="price-buttons">
+            <a class="whatsapp-button" href="https://wa.me/559188488129?text=Olá! Tenho interesse no City Tour Belém. Gostaria de receber mais informações e verificar a disponibilidade." target="_blank"><img src="img/icons/whatsapp-logo.png"
+                alt="Logo do WhatsApp">Reservar no WhatsApp</a>
+            <a class="secondary-button" href="index.html#destinos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 12H5"></path>
+                <path d="m12 19-7-7 7-7"></path>
+              </svg>
+              Voltar aos roteiros
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="logo-info">
+
+        <a href="index.html" class="logo-container">
+          <img src="img/icons/logo.png" alt="Imagem da logo" />
+          <h3>PAIDEGUATUR</h3>
+        </a>
+
+        <p>Pioneiros no turismo paraense desde 2005. Roteiros autênticos com segurança, cuidado e hospitalidade em cada
+          detalhe.</p>
+
+        <div class="social-midia">
+          <a href="https://www.instagram.com/paideguaturismo/" target="_blank" class="background-icone"><img
+              src="img/icons/footer-instagram.png" alt=""></a>
+          <a href="https://web.facebook.com/paideguatur.ilhademarajo" target="_blank" class="background-icone"><img
+              src="img/icons/footer-facebook.png" alt=""></a>
+          <a href="https://wa.me/559188488129?text=Olá! Gostaria de saber mais informações sobre os passeios." class="background-icone" id="icone-whatzApp" target="_blank"><img
+              src="img/icons/footer-whatsapp.png" alt=""></a>
+        </div>
+        <!-- LINK PARA CRÉDITOS -->
+        <div class="footer-credits-link">
+          <a href="creditos.html">Créditos das imagens</a>
+        </div>
+      </div>
+
+      <div class="footer-navigation">
+        <h4>Navegue</h4>
+        <a href="#destino">Destino</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#roteiro">Roteiro</a>
+        <a href="#incluso">Incluso</a>
+        <a href="#nao-incluso">Não incluso</a>
+        <a href="#atencao">Atenção</a>
+        <a href="#preco">Preço</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <a href="#"><img src="img/icons/phone-mobile.png" alt="">+55 (91) 98848-8129</a>
+        <a href="#"><img src="img/icons/email-mobile.png" alt="">paidegua@hotmail.com</a>
+        <a href="#"><img src="img/icons/localization-mobile.png" alt="">Belém — Pará, Brasil</a>
+      </div>
+
+    </div>
+
+    <div class="rights-reserved">
+      <p>© 2026 Pai D'égua Viagens. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
