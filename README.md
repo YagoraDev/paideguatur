@@ -11,7 +11,7 @@ O site foi desenvolvido para ser **leve, direto e focado em conversão**, elimin
 ## Links Oficiais
 
 - **Site em Produção (Hospedagem HostGator):** [https://marajopaideguatur.com.br/] 
-- **Preview / GitHub Pages ou Vercel:** [https://paideguatur.vercel.app/] 
+- **Preview / Vercel:** [https://paideguatur.vercel.app/] 
 
 ---
 
